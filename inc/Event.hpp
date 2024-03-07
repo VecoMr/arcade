@@ -11,14 +11,17 @@
 
 namespace arcade {
     using VAcradeEvent = std::vector<event::ArcadeEvent>;
+    using VGameEvent = std::vector<event::GameEvent>;
 
     namespace event {
 
+        enum class type {
+            PRESSED,
+            RELEASED
+        };
+
         struct keyboard {
-            enum class type {
-                PRESSED,
-                RELEASED
-            };
+            type type;
             enum class key {
                 A,
                 B,
@@ -125,6 +128,7 @@ namespace arcade {
         };
 
         struct mouse {
+            type type;
             int x;
             int y;
             int wheel;
@@ -159,24 +163,32 @@ namespace arcade {
         };
 
         enum class GameEventType {
-            MOVE,
-            CLICK,
-            WINDOW
-        };
-
-        enum class move {
             UP,
             DOWN,
             LEFT,
-            RIGHT
+            RIGHT,
+            PREV_GAME,
+            NEXT_GAME,
+            PREV_GRAPHICAL,
+            NEXT_GRAPHICAL,
+            CLICK,
+            WINDOW,
+            CLOSE,
+            EXIT
         };
 
         struct GameEvent {
             GameEventType type;
-            union {
-                move move;
-                mouse mouse;
-                window window;
+            union options {
+                struct mouse {
+                    event::type type;
+                    float x;
+                    float y;
+                };
+                struct window {
+                    int width;
+                    int height;
+                };
             };
         };
     }

@@ -11,8 +11,6 @@
 #include <iostream>
 #include <memory>
 
-#include "Texture.hpp"
-
 namespace arcade {
     using PtrObject = std::shared_ptr<IObject>;
     using VPtrObject = std::vector<std::shared_ptr<IObject>>;
@@ -55,6 +53,9 @@ namespace arcade {
             virtual pos_t getPos() const = 0;
     };
 
+    using PtrTextObject = std::shared_ptr<ITextObject>;
+    using VPtrTextObject = std::vector<std::shared_ptr<ITextObject>>;
+
     class ITextObject: public IObject {
         public:
             virtual ~ITextObject() = default;
@@ -72,6 +73,9 @@ namespace arcade {
             virtual std::string getFontFamily() const = 0;
     };
 
+    using PtrSpriteObject = std::shared_ptr<ISpriteObject>;
+    using VPtrSpriteObject = std::vector<std::shared_ptr<ISpriteObject>>;
+
     class ISpriteObject: public IObject {
         public:
             virtual ~ISpriteObject() = default;
@@ -81,5 +85,22 @@ namespace arcade {
 
             virtual void setShape(shape_t shape) = 0;
             virtual shape_t getShape() const = 0;
+    };
+
+    using PtrTexture = std::shared_ptr<ITexture>;
+    using VPtrTexture = std::vector<std::shared_ptr<ITexture>>;
+
+    class ITexture {
+        public:
+            ~ITexture() = default;
+
+            void setId(int id);
+            int getId() const;
+
+            void setTexturePath(std::string texturePath);
+            std::string &getTexturePath() const;
+
+            void setTextureText(PtrTextObject text);
+            PtrTextObject &getTextureText() const;
     };
 }

@@ -19,6 +19,8 @@ namespace arcade {
         int height;
         std::string title;
         float soundVolume;
+        int fps;
+        int tps;
     } windowParameters_t;
 
     class IGraphics {
