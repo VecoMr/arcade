@@ -1,0 +1,226 @@
+\doxysection{arcade\+::IObject Class Reference}
+\hypertarget{classarcade_1_1IObject}{}\label{classarcade_1_1IObject}\index{arcade::IObject@{arcade::IObject}}
+
+
+Base interface for all game objects.  
+
+
+
+
+{\ttfamily \#include $<$IObject.\+hpp$>$}
+
+Inheritance diagram for arcade\+::IObject\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.937063cm]{classarcade_1_1IObject}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}{\texorpdfstring{$\sim$}{\string~}\+IObject}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IObject}{IObject}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}{set\+Type}} (Object\+Type type)=0
+\begin{DoxyCompactList}\small\item\em Sets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} Object\+Type \mbox{\hyperlink{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}{get\+Type}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}{is\+Display}} (\mbox{\hyperlink{classarcade_1_1Library}{bool}} is\+Display)=0
+\begin{DoxyCompactList}\small\item\em Sets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{is\+Display}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}{set\+Pos}} (\mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{pos}})=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}{get\+Pos}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}{set\+Bounds}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{bounds}})=0
+\begin{DoxyCompactList}\small\item\em Sets the bounding rectangle of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}{get\+Bounds}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the bounding rectangle of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base interface for all game objects. 
+
+This interface defines common functionalities for various graphical objects used in the arcade library. Implementations of this interface provide specific rendering behaviors for different object types (text, sprite, etc.). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}\label{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5} 
+\index{arcade::IObject@{arcade::IObject}!````~IObject@{\texorpdfstring{$\sim$}{\string~}IObject}}
+\index{````~IObject@{\texorpdfstring{$\sim$}{\string~}IObject}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IObject()}{\string~IObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+IObject\+::\texorpdfstring{$\sim$}{\string~}\+IObject (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1IObject}{IObject}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}\label{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348} 
+\index{arcade::IObject@{arcade::IObject}!getBounds@{getBounds}}
+\index{getBounds@{getBounds}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{getBounds()}{getBounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} arcade\+::\+IObject\+::get\+Bounds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the bounding rectangle of the object. 
+
+This function returns the current bounding rectangle of the object as a {\ttfamily \doxylink{structarcade_1_1shape__t}{shape\+\_\+t}} structure.
+
+\begin{DoxyReturn}{Returns}
+The current bounding rectangle of the object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_a3b94ef9cd004cacda83ba98e9d676ba1}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_a7e16a5999ac70c5125c4d58ea309bc49}{arcade\+::\+ARect}}, \mbox{\hyperlink{classarcade_1_1ASprite_af37eab83e2dc7de35efa0abad88cfa5b}{arcade\+::\+ASprite}}, and \mbox{\hyperlink{classarcade_1_1AText_a3ae2b792d71671aa93997956a21a57a7}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}\label{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac} 
+\index{arcade::IObject@{arcade::IObject}!getPos@{getPos}}
+\index{getPos@{getPos}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{getPos()}{getPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} arcade\+::\+IObject\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the position of the object. 
+
+This function returns the current position of the object as a {\ttfamily \doxylink{structarcade_1_1pos__t}{pos\+\_\+t}} structure.
+
+\begin{DoxyReturn}{Returns}
+The current position of the object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_a3b25086ddc8515c2c549f459d88c5460}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_a67184bd204dd336ab8435f2d90a67a00}{arcade\+::\+ARect}}, \mbox{\hyperlink{classarcade_1_1ASprite_a5c8020e27ddb95a030682732eee1c9fe}{arcade\+::\+ASprite}}, and \mbox{\hyperlink{classarcade_1_1AText_acb21c37abfd76105ff16ad6d867a7da1}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}\label{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a} 
+\index{arcade::IObject@{arcade::IObject}!getType@{getType}}
+\index{getType@{getType}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} Object\+Type arcade\+::\+IObject\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the type of the object. 
+
+This function returns the current object type as an {\ttfamily Object\+Type} enum value.
+
+\begin{DoxyReturn}{Returns}
+The current object type. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_a6f2ff5b5eee9a63abd05391e06bd7965}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_a08cfe92ac1d696ea9afdd55cf0005366}{arcade\+::\+ARect}}, \mbox{\hyperlink{classarcade_1_1ASprite_a7c7a968916e51acbf873932f92cc7a12}{arcade\+::\+ASprite}}, and \mbox{\hyperlink{classarcade_1_1AText_acda537a3f53a597f368e648e4ae77c3d}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}\label{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e} 
+\index{arcade::IObject@{arcade::IObject}!isDisplay@{isDisplay}}
+\index{isDisplay@{isDisplay}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{isDisplay()}{isDisplay()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} arcade\+::\+IObject\+::is\+Display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the visibility of the object. 
+
+This function returns a boolean indicating whether the object is currently displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Display} & True if the object is show, false else. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_aa602f7993ea4c742b7ad462cacd33aae}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_a27b252ddaebf1e3ed7a1ed9b5d94a984}{arcade\+::\+ARect}}, \mbox{\hyperlink{classarcade_1_1ASprite_a6b8e9cc0b668ed87abc6647ef755f4c9}{arcade\+::\+ASprite}}, and \mbox{\hyperlink{classarcade_1_1AText_ac27a377b0fe6b58e916569121cbd69de}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}\label{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b} 
+\index{arcade::IObject@{arcade::IObject}!isDisplay@{isDisplay}}
+\index{isDisplay@{isDisplay}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{isDisplay()}{isDisplay()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IObject\+::is\+Display (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{bool}}}]{is\+Display }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the visibility of the object. 
+
+This function controls whether the object is displayed or hidden.
+
+
+\begin{DoxyParams}{Parameters}
+{\em is\+Display} & True to show the object, false to hide it. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_a67762449c0fdad3032c2c35a5085516f}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_a41040460d984c11806a2d7d9914bb558}{arcade\+::\+ARect}}, \mbox{\hyperlink{classarcade_1_1ASprite_ad4f841fe3f84b077a9a5b9cfaf698793}{arcade\+::\+ASprite}}, and \mbox{\hyperlink{classarcade_1_1AText_a5dd7d15dcfbd358b7502cbc8cccb02f8}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}\label{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2} 
+\index{arcade::IObject@{arcade::IObject}!setBounds@{setBounds}}
+\index{setBounds@{setBounds}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{setBounds()}{setBounds()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IObject\+::set\+Bounds (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}}}]{bounds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the bounding rectangle of the object. 
+
+This function sets the shape (x, y, width, height) of the object\textquotesingle{}s bounding rectangle using a {\ttfamily \doxylink{structarcade_1_1shape__t}{shape\+\_\+t}} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bounds} & The new bounding rectangle for the object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_aa87c6082cbdca65749c167f492ecb9c5}{arcade\+::\+AText}}, \mbox{\hyperlink{classarcade_1_1ABackground_ade8912b8239988618eaef729dab89b78}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_a5b380164be1ff651666c96620d475c0d}{arcade\+::\+ARect}}, and \mbox{\hyperlink{classarcade_1_1ASprite_a0ffe98b8dc465d5c494ae2ded1fcf0fa}{arcade\+::\+ASprite}}.
+
+\Hypertarget{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}\label{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7} 
+\index{arcade::IObject@{arcade::IObject}!setPos@{setPos}}
+\index{setPos@{setPos}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{setPos()}{setPos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IObject\+::set\+Pos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}}}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the position of the object. 
+
+This function sets the object\textquotesingle{}s position on the screen using a {\ttfamily \doxylink{structarcade_1_1pos__t}{pos\+\_\+t}} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The new position for the object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_a33c071ac446392d7891530975a1d6983}{arcade\+::\+AText}}, \mbox{\hyperlink{classarcade_1_1ABackground_af755b5b9c5892825f751502f13704358}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_aa9a1e5fdbd5a7a0445a8c5b9ec7e3efe}{arcade\+::\+ARect}}, and \mbox{\hyperlink{classarcade_1_1ASprite_a8fd80f792f66be2d16d8fb0625d62368}{arcade\+::\+ASprite}}.
+
+\Hypertarget{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}\label{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c} 
+\index{arcade::IObject@{arcade::IObject}!setType@{setType}}
+\index{setType@{setType}!arcade::IObject@{arcade::IObject}}
+\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IObject\+::set\+Type (\begin{DoxyParamCaption}\item[{Object\+Type}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the type of the object. 
+
+This function sets the object type (TEXT, SPRITE, BACKGROUND, or RECT) based on the {\ttfamily Object\+Type} enumeration.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The new object type. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_a8629a2213fcf70133a6c32564ef65d37}{arcade\+::\+AText}}, \mbox{\hyperlink{classarcade_1_1ABackground_a76a57834297314c66a16afd8dcdab01b}{arcade\+::\+ABackground}}, \mbox{\hyperlink{classarcade_1_1ARect_ad6647f0256159bc139d9e53fe5863db9}{arcade\+::\+ARect}}, and \mbox{\hyperlink{classarcade_1_1ASprite_ab668efcc3fd60318bafa35c7602de57b}{arcade\+::\+ASprite}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IObject.\+hpp\end{DoxyCompactItemize}

@@ -1,0 +1,190 @@
+\doxysection{IObject.\+hpp}
+\hypertarget{IObject_8hpp_source}{}\label{IObject_8hpp_source}\index{inc/IObject.hpp@{inc/IObject.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ arcade}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ IObject}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{namespace\ }arcade\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{enum\ class}\ LibType\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ GRAPHIC,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ GAME}
+\DoxyCodeLine{00025\ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{enum\ class}\ LibGraphic\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ SFML,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ NCURSES,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ SDL2,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ NDK,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ AALIB,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ ALLEGRO,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ XLIB,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ GTK,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ IRRLICHT,}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ OPENGL,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ VULKAN,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ QT,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ OTHER}
+\DoxyCodeLine{00048\ \ \ \ \ \};}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{enum\ class}\ LibGame\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ PACMAN,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ NIBBLER,}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ CENTIPEDE,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ SOLARFOX,}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ QIX,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ SNAKE,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ OTHER}
+\DoxyCodeLine{00065\ \ \ \ \ \};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00076\ \ \ \ \ \}\ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ r;}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ g;}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ b;}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ a;}
+\DoxyCodeLine{00089\ \ \ \ \ \}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{struct\ }\{}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00102\ \ \ \ \ \}\ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}};}
+\DoxyCodeLine{00103\ }
+\DoxyCodeLine{00110\ \ \ \ \ \textcolor{keyword}{enum\ class}\ ObjectType\ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ TEXT,}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ SPRITE,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ BACKGROUND,}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ RECT}
+\DoxyCodeLine{00115\ \ \ \ \ \};}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00124\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1IObject}{IObject}}\ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}{\string~IObject}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00132\ }
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}{setType}}(ObjectType\ type)\ =\ 0;}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ ObjectType\ \mbox{\hyperlink{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}{getType}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}{isDisplay}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{isDisplay}})\ =\ 0;}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{isDisplay}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00167\ }
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}{setPos}}(\mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{pos}})\ =\ 0;}
+\DoxyCodeLine{00176\ }
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ \mbox{\hyperlink{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}{getPos}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00185\ }
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}{setBounds}}(\mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{bounds}})\ =\ 0;}
+\DoxyCodeLine{00194\ }
+\DoxyCodeLine{00202\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}{getBounds}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00203\ \ \ \ \ \};}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \textcolor{keyword}{using\ }PtrObject\ =\ std::shared\_ptr<IObject>;}
+\DoxyCodeLine{00206\ \ \ \ \ \textcolor{keyword}{using\ }VPtrObject\ =\ std::vector<std::shared\_ptr<IObject>>;}
+\DoxyCodeLine{00207\ }
+\DoxyCodeLine{00214\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1ITextObject}{ITextObject}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classarcade_1_1IObject}{IObject}}\ \{}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a81e05b7906def642ae64129e4baffa97}{\string~ITextObject}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a566021aad9d69835d7cb8652dac78499}{setContent}}(\textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{classarcade_1_1Library}{str}})\ =\ 0;}
+\DoxyCodeLine{00231\ }
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classarcade_1_1ITextObject_a9f2a571acee1e3c670415dbbf139023e}{getContent}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00248\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a5f901efbf884b9a09b10cdd8046d7a6a}{setSize}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classarcade_1_1Library}{size}})\ =\ 0;}
+\DoxyCodeLine{00249\ }
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a2d886a63272b805bd9882f686d68a2b0}{getSize}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a80be571781641275a28053a9322902a8}{setColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{color}})\ =\ 0;}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1ITextObject_ac209a0b7fea767cca1fdc921c834d1ac}{getColor}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a6be5c58b940978bf9e52bf1ce2fd72ba}{setIdFontFamily}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ =\ 0;}
+\DoxyCodeLine{00287\ }
+\DoxyCodeLine{00297\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classarcade_1_1ITextObject_acf46c480f8c9b503035edc8196c464e4}{getIdFontFamily}}()\ =\ 0;}
+\DoxyCodeLine{00298\ }
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITextObject_ad88e69dfb90c9ab6d85c677277bdb96d}{setBackGroundColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{color}})\ =\ 0;}
+\DoxyCodeLine{00308\ }
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1ITextObject_a20be5c48eb1b4d60ef115eba79595de9}{getBackGroundColor}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00318\ \ \ \ \ \};}
+\DoxyCodeLine{00319\ }
+\DoxyCodeLine{00320\ \ \ \ \ \textcolor{keyword}{using\ }PtrTextObject\ =\ std::shared\_ptr<ITextObject>;}
+\DoxyCodeLine{00321\ \ \ \ \ \textcolor{keyword}{using\ }VPtrTextObject\ =\ std::vector<std::shared\_ptr<ITextObject>>;}
+\DoxyCodeLine{00322\ }
+\DoxyCodeLine{00330\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1ISpriteObject}{ISpriteObject}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classarcade_1_1IObject}{IObject}}\ \{}
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classarcade_1_1ISpriteObject_afacbc69708e0be42a39a9159d725436d}{\string~ISpriteObject}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00338\ }
+\DoxyCodeLine{00348\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ISpriteObject_ad6f2d3a9af382fce830c30be6f577c28}{setIdTexture}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ =\ 0;}
+\DoxyCodeLine{00349\ }
+\DoxyCodeLine{00357\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classarcade_1_1ISpriteObject_a12efe6b40e6375418ce5efa0cd61cee2}{getIdTexture}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00358\ }
+\DoxyCodeLine{00367\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ISpriteObject_a1006c1f5c152b46780c6eaa230a095e4}{setShape}}(\mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{shape}})\ =\ 0;}
+\DoxyCodeLine{00368\ }
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1ISpriteObject_a45ad60312d7073cccdcb2d13c6fe4d2d}{getShape}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00377\ \ \ \ \ \};}
+\DoxyCodeLine{00378\ }
+\DoxyCodeLine{00379\ }
+\DoxyCodeLine{00380\ \ \ \ \ \textcolor{keyword}{using\ }PtrSpriteObject\ =\ std::shared\_ptr<ISpriteObject>;}
+\DoxyCodeLine{00381\ \ \ \ \ \textcolor{keyword}{using\ }VPtrSpriteObject\ =\ std::vector<std::shared\_ptr<ISpriteObject>>;}
+\DoxyCodeLine{00382\ }
+\DoxyCodeLine{00389\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1ITexture}{ITexture}}\ \{}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classarcade_1_1ITexture_a8d8a565c95b50bbd660cee55bf4d3452}{\string~ITexture}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00397\ }
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITexture_ae8240c192cc9d2260fc0f756a781d98d}{setId}}(\textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ =\ 0;}
+\DoxyCodeLine{00407\ }
+\DoxyCodeLine{00415\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classarcade_1_1ITexture_a376ab7ed298d3683fff0efe5f05685a9}{getId}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00416\ }
+\DoxyCodeLine{00424\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITexture_a9b201c1a1c222d6c52d783e0e286e8cf}{setTexturePath}}(std::string\ \mbox{\hyperlink{classarcade_1_1Library}{texturePath}})\ =\ 0;}
+\DoxyCodeLine{00425\ }
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ \mbox{\hyperlink{classarcade_1_1ITexture_aeb4b0bdcf4470da90226da8cb5ab0930}{getTexturePath}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00434\ }
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1ITexture_a65db44b530818a39dcacbb1675c9db0d}{setTextureText}}(PtrTextObject\ \mbox{\hyperlink{classarcade_1_1Library}{text}})\ =\ 0;}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00453\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ PtrTextObject\ \mbox{\hyperlink{classarcade_1_1ITexture_acafc1644137b6a9f56dc81573e99db04}{getTextureText}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00454\ \ \ \ \ \};}
+\DoxyCodeLine{00455\ }
+\DoxyCodeLine{00456\ \ \ \ \ \textcolor{keyword}{using\ }PtrTexture\ =\ std::shared\_ptr<ITexture>;}
+\DoxyCodeLine{00457\ \ \ \ \ \textcolor{keyword}{using\ }VPtrTexture\ =\ std::vector<std::shared\_ptr<ITexture>>;}
+\DoxyCodeLine{00458\ }
+\DoxyCodeLine{00465\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1IBackground}{IBackground}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classarcade_1_1IObject}{IObject}}\ \{}
+\DoxyCodeLine{00466\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00472\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classarcade_1_1IBackground_a83a78f8cbe124257e3f485e574236b6c}{\string~IBackground}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00473\ }
+\DoxyCodeLine{00481\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IBackground_abf8c16cdf88c2a3a9b7bb694c9718916}{setColor}}(\mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{color}})\ =\ 0;}
+\DoxyCodeLine{00482\ }
+\DoxyCodeLine{00490\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1IBackground_acb82118467648ad907bdab6a3bd7c655}{getColor}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00491\ \ \ \ \ \};}
+\DoxyCodeLine{00492\ }
+\DoxyCodeLine{00493\ \ \ \ \ \textcolor{keyword}{using\ }PtrBackground\ =\ std::shared\_ptr<IBackground>;}
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00501\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1IRect}{IRect}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classarcade_1_1IObject}{IObject}}\ \{}
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00508\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classarcade_1_1IRect_ab3ca5c77dfabfa9689bc1879488e1b05}{\string~IRect}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00509\ }
+\DoxyCodeLine{00517\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IRect_a54f8209c54c41f788320eefb2e99d88d}{setColor}}(\mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{color}})\ =\ 0;}
+\DoxyCodeLine{00525\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1IRect_ab441af19dd744ef6dd7a7c7c84d93707}{getColor}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00526\ }
+\DoxyCodeLine{00534\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1IRect_adb2a8eeac14b68c1f3fa3863e4bc8c4f}{setShape}}(\mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1Library}{shape}})\ =\ 0;}
+\DoxyCodeLine{00535\ }
+\DoxyCodeLine{00543\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1IRect_a7f74ce8221ab233ac9a94a77d1a80777}{getShape}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00544\ \ \ \ \ \};}
+\DoxyCodeLine{00545\ }
+\DoxyCodeLine{00546\ \ \ \ \ \textcolor{keyword}{using\ }PtrRect\ =\ std::shared\_ptr<IRect>;}
+\DoxyCodeLine{00547\ \}}
+
+\end{DoxyCode}

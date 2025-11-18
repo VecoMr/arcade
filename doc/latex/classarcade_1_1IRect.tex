@@ -1,0 +1,157 @@
+\doxysection{arcade\+::IRect Class Reference}
+\hypertarget{classarcade_1_1IRect}{}\label{classarcade_1_1IRect}\index{arcade::IRect@{arcade::IRect}}
+
+
+Interface for rectangle objects.  
+
+
+
+
+{\ttfamily \#include $<$IObject.\+hpp$>$}
+
+Inheritance diagram for arcade\+::IRect\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classarcade_1_1IRect}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IRect_ab3ca5c77dfabfa9689bc1879488e1b05}{\texorpdfstring{$\sim$}{\string~}\+IRect}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IRect}{IRect}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IRect_a54f8209c54c41f788320eefb2e99d88d}{set\+Color}} (\mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{color}})=0
+\begin{DoxyCompactList}\small\item\em Sets the color of the rectangle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IRect_ab441af19dd744ef6dd7a7c7c84d93707}{get\+Color}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the color of the rectangle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IRect_adb2a8eeac14b68c1f3fa3863e4bc8c4f}{set\+Shape}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{shape}})=0
+\begin{DoxyCompactList}\small\item\em Sets the shape (position, width, and height) of the rectangle. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IRect_a7f74ce8221ab233ac9a94a77d1a80777}{get\+Shape}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the shape (position, width, and height) of the rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classarcade_1_1IObject}{arcade\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}{\texorpdfstring{$\sim$}{\string~}\+IObject}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IObject}{IObject}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}{set\+Type}} (Object\+Type type)=0
+\begin{DoxyCompactList}\small\item\em Sets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} Object\+Type \mbox{\hyperlink{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}{get\+Type}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}{is\+Display}} (\mbox{\hyperlink{classarcade_1_1Library}{bool}} is\+Display)=0
+\begin{DoxyCompactList}\small\item\em Sets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{is\+Display}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}{set\+Pos}} (\mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{pos}})=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}{get\+Pos}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}{set\+Bounds}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{bounds}})=0
+\begin{DoxyCompactList}\small\item\em Sets the bounding rectangle of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}{get\+Bounds}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the bounding rectangle of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for rectangle objects. 
+
+This interface defines functionalities for managing rectangular shapes used in the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1IRect_ab3ca5c77dfabfa9689bc1879488e1b05}\label{classarcade_1_1IRect_ab3ca5c77dfabfa9689bc1879488e1b05} 
+\index{arcade::IRect@{arcade::IRect}!````~IRect@{\texorpdfstring{$\sim$}{\string~}IRect}}
+\index{````~IRect@{\texorpdfstring{$\sim$}{\string~}IRect}!arcade::IRect@{arcade::IRect}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IRect()}{\string~IRect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+IRect\+::\texorpdfstring{$\sim$}{\string~}\+IRect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1IRect}{IRect}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1IRect_ab441af19dd744ef6dd7a7c7c84d93707}\label{classarcade_1_1IRect_ab441af19dd744ef6dd7a7c7c84d93707} 
+\index{arcade::IRect@{arcade::IRect}!getColor@{getColor}}
+\index{getColor@{getColor}!arcade::IRect@{arcade::IRect}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} arcade\+::\+IRect\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the color of the rectangle. 
+
+This function returns the current color used for the rectangle.
+
+\begin{DoxyReturn}{Returns}
+The current color of the rectangle. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ARect_a584aa6bbae27ffee90f6f3aae7fa8bc1}{arcade\+::\+ARect}}.
+
+\Hypertarget{classarcade_1_1IRect_a7f74ce8221ab233ac9a94a77d1a80777}\label{classarcade_1_1IRect_a7f74ce8221ab233ac9a94a77d1a80777} 
+\index{arcade::IRect@{arcade::IRect}!getShape@{getShape}}
+\index{getShape@{getShape}!arcade::IRect@{arcade::IRect}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} arcade\+::\+IRect\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the shape (position, width, and height) of the rectangle. 
+
+This function returns the current shape definition of the rectangle as a {\ttfamily \doxylink{structarcade_1_1shape__t}{shape\+\_\+t}} structure.
+
+\begin{DoxyReturn}{Returns}
+The current shape definition of the rectangle. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ARect_a9325c70f88f0873e79a0ec46d79a78be}{arcade\+::\+ARect}}.
+
+\Hypertarget{classarcade_1_1IRect_a54f8209c54c41f788320eefb2e99d88d}\label{classarcade_1_1IRect_a54f8209c54c41f788320eefb2e99d88d} 
+\index{arcade::IRect@{arcade::IRect}!setColor@{setColor}}
+\index{setColor@{setColor}!arcade::IRect@{arcade::IRect}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IRect\+::set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the color of the rectangle. 
+
+This function sets the color used to fill or outline the rectangle.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The new color for the rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ARect_a947a75ac964eb323b876f661e38c49c0}{arcade\+::\+ARect}}.
+
+\Hypertarget{classarcade_1_1IRect_adb2a8eeac14b68c1f3fa3863e4bc8c4f}\label{classarcade_1_1IRect_adb2a8eeac14b68c1f3fa3863e4bc8c4f} 
+\index{arcade::IRect@{arcade::IRect}!setShape@{setShape}}
+\index{setShape@{setShape}!arcade::IRect@{arcade::IRect}}
+\doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IRect\+::set\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the shape (position, width, and height) of the rectangle. 
+
+This function defines the position, width, and height of the rectangle using a {\ttfamily \doxylink{structarcade_1_1shape__t}{shape\+\_\+t}} structure.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The new shape definition for the rectangle. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ARect_ae14e7ac79cdedb1a8f492c011ad0c4ba}{arcade\+::\+ARect}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IObject.\+hpp\end{DoxyCompactItemize}

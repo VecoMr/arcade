@@ -1,0 +1,210 @@
+\doxysection{arcade\+::IGames Class Reference}
+\hypertarget{classarcade_1_1IGames}{}\label{classarcade_1_1IGames}\index{arcade::IGames@{arcade::IGames}}
+
+
+Interface for game functionalities in the arcade library.  
+
+
+
+
+{\ttfamily \#include $<$IGames.\+hpp$>$}
+
+Inheritance diagram for arcade\+::IGames\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1IGames}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IGames_a09b8a87a45e57c72a799a55bdcbcf624}{\texorpdfstring{$\sim$}{\string~}\+IGames}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IGames}{IGames}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGames_aad91216603aac498bc7a533da7a9e6a8}{init\+Game}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} Ptr\+WindowP \mbox{\hyperlink{classarcade_1_1Library}{windowP}})=0
+\begin{DoxyCompactList}\small\item\em Initializes the game with the provided window parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGames_a0284cb9f0ef7b06f41adc1854d768a23}{destroy\+Game}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroys the game and releases associated resources. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGames_afbf2c22245d4b652dd5704ad06654591}{restart\+Game}} ()=0
+\begin{DoxyCompactList}\small\item\em Restarts the current game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IGames_a38c3123ff3869df59b6c8304b76fa240}{is\+Game\+Over}} ()=0
+\begin{DoxyCompactList}\small\item\em Checks if the game is over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} State \mbox{\hyperlink{classarcade_1_1IGames_a57715c47917d2c2714119a590367ebbd}{execute}} (VGame\+Event \&\mbox{\hyperlink{classarcade_1_1Library}{events}})=0
+\begin{DoxyCompactList}\small\item\em Processes game events and updates the game state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1IGames_a7319bef6f44353211fefd91d54311d84}{get\+Score}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the current game score. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classarcade_1_1IGames_a11eeb441669458a490d885c697f6b5c8}{get\+Font\+Paths}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the list of font paths used by the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} VPtr\+Texture \& \mbox{\hyperlink{classarcade_1_1IGames_afdec75dd06e817802d67e1aa840b82b5}{get\+Textures}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets a reference to the game\textquotesingle{}s textures. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} VPtr\+Object \& \mbox{\hyperlink{classarcade_1_1IGames_aa0d7df4e5c7760409f9edb2e618afce0}{get\+Objects}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets a reference to the game objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for game functionalities in the arcade library. 
+
+This interface defines essential functions for game logic and management within the arcade library. Implementations of this interface provide the core gameplay functionalities for specific games. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1IGames_a09b8a87a45e57c72a799a55bdcbcf624}\label{classarcade_1_1IGames_a09b8a87a45e57c72a799a55bdcbcf624} 
+\index{arcade::IGames@{arcade::IGames}!````~IGames@{\texorpdfstring{$\sim$}{\string~}IGames}}
+\index{````~IGames@{\texorpdfstring{$\sim$}{\string~}IGames}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IGames()}{\string~IGames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+IGames\+::\texorpdfstring{$\sim$}{\string~}\+IGames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1IGames}{IGames}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1IGames_a0284cb9f0ef7b06f41adc1854d768a23}\label{classarcade_1_1IGames_a0284cb9f0ef7b06f41adc1854d768a23} 
+\index{arcade::IGames@{arcade::IGames}!destroyGame@{destroyGame}}
+\index{destroyGame@{destroyGame}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{destroyGame()}{destroyGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGames\+::destroy\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the game and releases associated resources. 
+
+This function cleans up the game resources and terminates the game instance. \Hypertarget{classarcade_1_1IGames_a57715c47917d2c2714119a590367ebbd}\label{classarcade_1_1IGames_a57715c47917d2c2714119a590367ebbd} 
+\index{arcade::IGames@{arcade::IGames}!execute@{execute}}
+\index{execute@{execute}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} State arcade\+::\+IGames\+::execute (\begin{DoxyParamCaption}\item[{VGame\+Event \&}]{events }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Processes game events and updates the game state. 
+
+This function takes a reference to a container (likely a vector) of {\ttfamily VGame\+Event} objects representing the events that have occurred. It processes these events and updates the game state accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em events} & Reference to a container holding VGame\+Event objects (game events). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The current game state after processing events. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGames_a11eeb441669458a490d885c697f6b5c8}\label{classarcade_1_1IGames_a11eeb441669458a490d885c697f6b5c8} 
+\index{arcade::IGames@{arcade::IGames}!getFontPaths@{getFontPaths}}
+\index{getFontPaths@{getFontPaths}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{getFontPaths()}{getFontPaths()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} std\+::vector$<$ std\+::string $>$ \& arcade\+::\+IGames\+::get\+Font\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the list of font paths used by the game. 
+
+This function provides a reference to a vector of strings containing the file paths for the fonts used in the game. These fonts are likely loaded for displaying text elements.
+
+\begin{DoxyReturn}{Returns}
+Reference to a vector containing font file paths (strings). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AGrid_aa746f8a1394022547ec7df9e874956ac}{arcade\+::\+AGrid}}.
+
+\Hypertarget{classarcade_1_1IGames_aa0d7df4e5c7760409f9edb2e618afce0}\label{classarcade_1_1IGames_aa0d7df4e5c7760409f9edb2e618afce0} 
+\index{arcade::IGames@{arcade::IGames}!getObjects@{getObjects}}
+\index{getObjects@{getObjects}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{getObjects()}{getObjects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} VPtr\+Object \& arcade\+::\+IGames\+::get\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets a reference to the game objects. 
+
+This function provides a reference to a container (likely a vector) of {\ttfamily VPtr\+Object} objects representing the game objects managed by the game. These objects may include sprites, backgrounds, rect or text components.
+
+\begin{DoxyReturn}{Returns}
+Reference to a container holding VPtr\+Object objects (game objects). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AGrid_a083355c1d8e01338a80537612c800506}{arcade\+::\+AGrid}}.
+
+\Hypertarget{classarcade_1_1IGames_a7319bef6f44353211fefd91d54311d84}\label{classarcade_1_1IGames_a7319bef6f44353211fefd91d54311d84} 
+\index{arcade::IGames@{arcade::IGames}!getScore@{getScore}}
+\index{getScore@{getScore}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} arcade\+::\+IGames\+::get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the current game score. 
+
+This function returns the current score achieved in the game.
+
+\begin{DoxyReturn}{Returns}
+The current game score (integer value). 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGames_afdec75dd06e817802d67e1aa840b82b5}\label{classarcade_1_1IGames_afdec75dd06e817802d67e1aa840b82b5} 
+\index{arcade::IGames@{arcade::IGames}!getTextures@{getTextures}}
+\index{getTextures@{getTextures}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{getTextures()}{getTextures()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} VPtr\+Texture \& arcade\+::\+IGames\+::get\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets a reference to the game\textquotesingle{}s textures. 
+
+This function provides a reference to a container (likely a vector) of "{}{\ttfamily VPtr\+Texture} objects representing the textures used in the game. These textures are likely used for rendering sprites.
+
+\begin{DoxyReturn}{Returns}
+Reference to a container holding VPtr\+Texture objects (game textures). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AGrid_a5ddc98ee6816097dab699e09e4eb8df7}{arcade\+::\+AGrid}}.
+
+\Hypertarget{classarcade_1_1IGames_aad91216603aac498bc7a533da7a9e6a8}\label{classarcade_1_1IGames_aad91216603aac498bc7a533da7a9e6a8} 
+\index{arcade::IGames@{arcade::IGames}!initGame@{initGame}}
+\index{initGame@{initGame}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{initGame()}{initGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGames\+::init\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} Ptr\+WindowP}]{windowP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the game with the provided window parameters. 
+
+This function initializes the game using the specified window configuration. The {\ttfamily windowP} argument likely points to a {\ttfamily \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t}} object containing window creation details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em windowP} & Shared pointer to a \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGames_a38c3123ff3869df59b6c8304b76fa240}\label{classarcade_1_1IGames_a38c3123ff3869df59b6c8304b76fa240} 
+\index{arcade::IGames@{arcade::IGames}!isGameOver@{isGameOver}}
+\index{isGameOver@{isGameOver}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{isGameOver()}{isGameOver()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} arcade\+::\+IGames\+::is\+Game\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if the game is over. 
+
+This function returns a boolean indicating whether the game has reached an ending state (win, lose, etc.).
+
+\begin{DoxyReturn}{Returns}
+True if the game is over, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGames_afbf2c22245d4b652dd5704ad06654591}\label{classarcade_1_1IGames_afbf2c22245d4b652dd5704ad06654591} 
+\index{arcade::IGames@{arcade::IGames}!restartGame@{restartGame}}
+\index{restartGame@{restartGame}!arcade::IGames@{arcade::IGames}}
+\doxysubsubsection{\texorpdfstring{restartGame()}{restartGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGames\+::restart\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Restarts the current game. 
+
+This function resets the game state and starts a new game session. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IGames.\+hpp\end{DoxyCompactItemize}

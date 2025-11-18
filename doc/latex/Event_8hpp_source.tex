@@ -1,0 +1,213 @@
+\doxysection{Event.\+hpp}
+\hypertarget{Event_8hpp_source}{}\label{Event_8hpp_source}\index{inc/Event.hpp@{inc/Event.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ arcade}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ E,nt}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{namespace\ }arcade\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{namespace\ }event\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ Type\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ PRESSED,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ RELEASED}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ keys\ \{}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ \ \ \ \ A,}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ B,}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ C,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ D,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ E,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ F,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ G,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ H,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ I,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \ \ \ \ J,}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ K,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ L,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ M,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ N,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ O,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ P,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ Q,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ R,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ S,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ T,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ U,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ V,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ W,}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ X,}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ Y,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ Z,}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ NUM0,}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ NUM1,}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ NUM2,}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ NUM3,}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ NUM4,}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ NUM5,}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ NUM6,}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ NUM7,}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ NUM8,}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ NUM9,}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \ \ \ \ ESCAPE,}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ LCONTROL,}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ LSHIFT,}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ LALT,}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ LSYSTEM,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ RCONTROL,}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ RSHIFT,}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ RALT,}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ RSYSTEM,}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ MENU,}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ LBRACKET,}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ RBRACKET,}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ SEMICOLON,}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ COMMA,}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ PERIOD,}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ QUOTE,}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ SLASH,}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ BACKSLASH,}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ TILDE,}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ EQUAL,}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ DASH,}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ SPACE,}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ RETURN,}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ BACKSPACE,}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ TAB,}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ PAGEUP,}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ PAGEDOWN,}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ END,}
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \ \ \ \ HOME,}
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \ \ \ \ INSERT,}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ DELETE,}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ ADD,}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ SUBTRACT,}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ MULTIPLY,}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ DIVIDE,}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ LEFT,}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ RIGHT,}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ UP,}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ DOWN,}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD0,}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD1,}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD2,}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD3,}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD4,}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD5,}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD6,}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD7,}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD8,}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \ \ \ \ NUMPAD9,}
+\DoxyCodeLine{00119\ \ \ \ \ \ \ \ \ \ \ \ \ F1,}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ F2,}
+\DoxyCodeLine{00121\ \ \ \ \ \ \ \ \ \ \ \ \ F3,}
+\DoxyCodeLine{00122\ \ \ \ \ \ \ \ \ \ \ \ \ F4,}
+\DoxyCodeLine{00123\ \ \ \ \ \ \ \ \ \ \ \ \ F5,}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ F6,}
+\DoxyCodeLine{00125\ \ \ \ \ \ \ \ \ \ \ \ \ F7,}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ F8,}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \ \ \ \ F9,}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ F10,}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ F11,}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ \ \ \ \ F12,}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ \ \ \ \ F13,}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ \ \ \ \ F14,}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ F15,}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ \ \ \ \ PAUSE,}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \ \ \ \ UNKNOWN}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00137\ }
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structarcade_1_1event_1_1keyboard}{keyboard}}\ \{}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ \ \ \ \ Type\ type;}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ \ \ \ \ keys\ key;}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structarcade_1_1event_1_1mouse}{mouse}}\ \{}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ Type\ type;}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ wheel;}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structarcade_1_1event_1_1window}{window}}\ \{}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ width;}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ height;}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ type\ \{}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ CLOSE,}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ RESIZE,}
+\DoxyCodeLine{00174\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ FOCUS,}
+\DoxyCodeLine{00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ LOSTFOCUS}
+\DoxyCodeLine{00176\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ type;}
+\DoxyCodeLine{00177\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00178\ }
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ EventType\ \{}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ \ \ \ \ NONE,}
+\DoxyCodeLine{00192\ \ \ \ \ \ \ \ \ \ \ \ \ KEYBOARD,}
+\DoxyCodeLine{00193\ \ \ \ \ \ \ \ \ \ \ \ \ MOUSE,}
+\DoxyCodeLine{00194\ \ \ \ \ \ \ \ \ \ \ \ \ WINDOW,}
+\DoxyCodeLine{00195\ \ \ \ \ \ \ \ \ \ \ \ \ JOYSTICK,}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00197\ }
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structarcade_1_1event_1_1ArcadeEvent}{ArcadeEvent}}\ \{}
+\DoxyCodeLine{00206\ \ \ \ \ \ \ \ \ \ \ \ \ EventType\ type;}
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{union\ }\{}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1event_1_1keyboard}{keyboard}}\ evKey;}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1event_1_1mouse}{mouse}}\ evMouse;}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1event_1_1window}{window}}\ evWindow;}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00212\ }
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ operator==(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1event_1_1ArcadeEvent}{ArcadeEvent}}\ \&\mbox{\hyperlink{classarcade_1_1Library}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00227\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarcade_1_1Library}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1event_1_1ArcadeEvent}{ArcadeEvent}}\&\ \mbox{\hyperlink{classarcade_1_1Library}{lhs}},\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1event_1_1ArcadeEvent}{ArcadeEvent}}\&\ \mbox{\hyperlink{classarcade_1_1Library}{rhs}});}
+\DoxyCodeLine{00228\ }
+\DoxyCodeLine{00250\ \ \ \ \ \ \ \ \ \textcolor{keyword}{enum\ class}\ GameEventType\ \{}
+\DoxyCodeLine{00251\ \ \ \ \ \ \ \ \ \ \ \ \ UP,}
+\DoxyCodeLine{00252\ \ \ \ \ \ \ \ \ \ \ \ \ DOWN,}
+\DoxyCodeLine{00253\ \ \ \ \ \ \ \ \ \ \ \ \ LEFT,}
+\DoxyCodeLine{00254\ \ \ \ \ \ \ \ \ \ \ \ \ RIGHT,}
+\DoxyCodeLine{00255\ \ \ \ \ \ \ \ \ \ \ \ \ RESTART\_GAME,}
+\DoxyCodeLine{00256\ \ \ \ \ \ \ \ \ \ \ \ \ PREV\_GAME,}
+\DoxyCodeLine{00257\ \ \ \ \ \ \ \ \ \ \ \ \ NEXT\_GAME,}
+\DoxyCodeLine{00258\ \ \ \ \ \ \ \ \ \ \ \ \ PREV\_GRAPHICAL,}
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ \ \ \ \ NEXT\_GRAPHICAL,}
+\DoxyCodeLine{00260\ \ \ \ \ \ \ \ \ \ \ \ \ CLICK,}
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ \ \ \ \ KEYBOARD,}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ \ \ \ \ WINDOW,}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ \ \ \ \ CLOSE,}
+\DoxyCodeLine{00264\ \ \ \ \ \ \ \ \ \ \ \ \ EXIT,}
+\DoxyCodeLine{00265\ \ \ \ \ \ \ \ \ \ \ \ \ NONE}
+\DoxyCodeLine{00266\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00267\ }
+\DoxyCodeLine{00275\ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structarcade_1_1event_1_1GameEvent}{GameEvent}}\ \{}
+\DoxyCodeLine{00276\ \ \ \ \ \ \ \ \ \ \ \ \ GameEventType\ type;}
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ \ \ \ \ Type\ state;}
+\DoxyCodeLine{00278\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{union\ }\mbox{\hyperlink{unionarcade_1_1event_1_1GameEvent_1_1options}{options}}\ \{}
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structarcade_1_1event_1_1GameEvent_1_1options_1_1mouse}{mouse}}\ \{}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ x;}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ y;}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{structarcade_1_1event_1_1GameEvent_1_1options_1_1mouse}{mouse}};}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1event_1_1window}{window}}\ windowEv;}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ keys\ key;}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \mbox{\hyperlink{unionarcade_1_1event_1_1GameEvent_1_1options}{options}};}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ \};}
+\DoxyCodeLine{00287\ \ \ \ \ \}}
+\DoxyCodeLine{00288\ \ \ \ \ \textcolor{keyword}{using\ }VArcadeEvent\ =\ std::vector<event::ArcadeEvent>;}
+\DoxyCodeLine{00289\ \ \ \ \ \textcolor{keyword}{using\ }VGameEvent\ =\ std::vector<event::GameEvent>;}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \}}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00293\ std::ostream\&\ operator<<(std::ostream\&\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1event_1_1GameEvent}{arcade::event::GameEvent}}\ \&event);}
+\DoxyCodeLine{00294\ std::string\ toString(arcade::event::keys\ key);}
+\DoxyCodeLine{00295\ std::string\ toStringSpecial(arcade::event::keys\ k);}
+
+\end{DoxyCode}

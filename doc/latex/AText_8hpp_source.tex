@@ -1,0 +1,66 @@
+\doxysection{AText.\+hpp}
+\hypertarget{AText_8hpp_source}{}\label{AText_8hpp_source}\index{inc/AText.hpp@{inc/AText.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2024}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ B-\/OOP-\/400-\/LYN-\/4-\/1-\/arcade-\/alexandre.douard}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ AText}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}IObject.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }arcade\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{classarcade_1_1AText}{AText}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classarcade_1_1ITextObject}{ITextObject}}\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classarcade_1_1AText}{AText}}(\textcolor{keywordtype}{int}\ fontId,\ std::string\ text,\ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ pos,\ \textcolor{keywordtype}{int}\ size,\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ color);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classarcade_1_1AText}{AText}}(\textcolor{keywordtype}{int}\ fontId,\ std::string\ text,\ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ pos,\ \textcolor{keywordtype}{int}\ size,\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ color,\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ backGroundColor);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classarcade_1_1AText}{AText}}(\textcolor{keywordtype}{int}\ fontId,\ \textcolor{keywordtype}{char}\ *text,\ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ pos,\ \textcolor{keywordtype}{int}\ size,\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ color);}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classarcade_1_1AText}{\string~AText}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_a8629a2213fcf70133a6c32564ef65d37}{setType}}(\textcolor{keyword}{const}\ ObjectType\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ ObjectType\ \mbox{\hyperlink{classarcade_1_1AText_acda537a3f53a597f368e648e4ae77c3d}{getType}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_a5dd7d15dcfbd358b7502cbc8cccb02f8}{isDisplay}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarcade_1_1AText_ac27a377b0fe6b58e916569121cbd69de}{isDisplay}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classarcade_1_1AText_ac27a377b0fe6b58e916569121cbd69de}{isDisplay}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_a33c071ac446392d7891530975a1d6983}{setPos}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ pos)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ \mbox{\hyperlink{classarcade_1_1AText_acb21c37abfd76105ff16ad6d867a7da1}{getPos}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_ae9756bab5be1f2accd91543b74bdf8a5}{setContent}}(\textcolor{keyword}{const}\ std::string\ text)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classarcade_1_1AText_afec6544b34ab66b8f5f1426f165e6668}{getContent}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_af35e148c5aa29631f824cd5307fc2d7c}{setIdFontFamily}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \textcolor{keywordtype}{id})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \&\mbox{\hyperlink{classarcade_1_1AText_ab3980b1ef028fa3eec830ed27f12a448}{getIdFontFamily}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_a4897e3a43f9f4ae553428b2f619aa234}{setSize}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ size)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classarcade_1_1AText_aff62bca3b2cc6dab277adf670463ad1a}{getSize}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_accbe717cad5feb783a30229e11e340b8}{setColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ color)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1AText_af4e2499cf7a50a1ff5a7361bca0da7a3}{getColor}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_aa87c6082cbdca65749c167f492ecb9c5}{setBounds}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ bounds)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \mbox{\hyperlink{classarcade_1_1AText_a3ae2b792d71671aa93997956a21a57a7}{getBounds}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classarcade_1_1AText_a6023ce450e8cb1423589e51c1188a759}{setBackGroundColor}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ color)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \mbox{\hyperlink{classarcade_1_1AText_a87a08c97ec19548644a9d3308712adf2}{getBackGroundColor}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isIn(\mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ pos)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_fontId;}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ \_text;}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1pos__t}{pos\_t}}\ \_pos;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \_size;}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \_color;}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \_isDisplay;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ ObjectType\ \_type;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1shape__t}{shape\_t}}\ \_bounds;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{structarcade_1_1color__t}{color\_t}}\ \_backGroundColor;}
+\DoxyCodeLine{00059\ \ \ \ \ \};}
+\DoxyCodeLine{00060\ \}}
+
+\end{DoxyCode}

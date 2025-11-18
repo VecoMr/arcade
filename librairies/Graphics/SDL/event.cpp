@@ -1,0 +1,169 @@
+/*
+** EPITECH PROJECT, 2024
+** B-OOP-400-LYN-4-1-arcade-alexandre.douard
+** File description:
+** event
+*/
+
+#include "Sdl.hpp"
+
+namespace arcade {
+    namespace sdl2 {
+        event::keys Sdl2::getKey(SDL_Keycode key) {
+            switch (key) {
+                case SDLK_a:
+                    return arcade::event::keys::A;
+                case SDLK_b:
+                    return arcade::event::keys::B;
+                case SDLK_c:
+                    return arcade::event::keys::C;
+                case SDLK_d:
+                    return arcade::event::keys::D;
+                case SDLK_e:
+                    return arcade::event::keys::E;
+                case SDLK_f:
+                    return arcade::event::keys::F;
+                case SDLK_g:
+                    return arcade::event::keys::G;
+                case SDLK_h:
+                    return arcade::event::keys::H;
+                case SDLK_i:
+                    return arcade::event::keys::I;
+                case SDLK_j:
+                    return arcade::event::keys::J;
+                case SDLK_k:
+                    return arcade::event::keys::K;
+                case SDLK_l:
+                    return arcade::event::keys::L;
+                case SDLK_m:
+                    return arcade::event::keys::M;
+                case SDLK_n:
+                    return arcade::event::keys::N;
+                case SDLK_o:
+                    return arcade::event::keys::O;
+                case SDLK_p:
+                    return arcade::event::keys::P;
+                case SDLK_q:
+                    return arcade::event::keys::Q;
+                case SDLK_r:
+                    return arcade::event::keys::R;
+                case SDLK_s:
+                    return arcade::event::keys::S;
+                case SDLK_t:
+                    return arcade::event::keys::T;
+                case SDLK_u:
+                    return arcade::event::keys::U;
+                case SDLK_v:
+                    return arcade::event::keys::V;
+                case SDLK_w:
+                    return arcade::event::keys::W;
+                case SDLK_x:
+                    return arcade::event::keys::X;
+                case SDLK_y:
+                    return arcade::event::keys::Y;
+                case SDLK_z:
+                    return arcade::event::keys::Z;
+                case SDLK_UP:
+                    return arcade::event::keys::UP;
+                case SDLK_DOWN:
+                    return arcade::event::keys::DOWN;
+                case SDLK_LEFT:
+                    return arcade::event::keys::LEFT;
+                case SDLK_RIGHT:
+                    return arcade::event::keys::RIGHT;
+                case SDLK_SPACE:
+                    return arcade::event::keys::SPACE;
+                case SDLK_ESCAPE:
+                    return arcade::event::keys::ESCAPE;
+                case SDLK_RETURN:
+                    return arcade::event::keys::RETURN;
+                case SDLK_BACKSPACE:
+                    return arcade::event::keys::BACKSPACE;
+                case SDLK_TAB:
+                    return arcade::event::keys::TAB;
+                case SDLK_LCTRL:
+                    return arcade::event::keys::LCONTROL;
+                case SDLK_LSHIFT:
+                    return arcade::event::keys::LSHIFT;
+                case SDLK_LALT:
+                    return arcade::event::keys::LALT;
+                case SDLK_LGUI:
+                    return arcade::event::keys::LSYSTEM;
+                case SDLK_RCTRL:
+                    return arcade::event::keys::RCONTROL;
+                case SDLK_RSHIFT:
+                    return arcade::event::keys::RSHIFT;
+                case SDLK_RALT:
+                    return arcade::event::keys::RALT;
+                case SDLK_RGUI:
+                    return arcade::event::keys::RSYSTEM;
+                case SDLK_MENU:
+                    return arcade::event::keys::MENU;
+                case SDLK_LEFTBRACKET:
+                    return arcade::event::keys::LBRACKET;
+                case SDLK_RIGHTBRACKET:
+                    return arcade::event::keys::RBRACKET;
+                case SDLK_SEMICOLON:
+                    return arcade::event::keys::SEMICOLON;
+                case SDLK_COMMA:
+                    return arcade::event::keys::COMMA;
+                case SDLK_PERIOD:
+                    return arcade::event::keys::PERIOD;
+                case SDLK_QUOTE:
+                    return arcade::event::keys::QUOTE;
+                case SDLK_SLASH:
+                    return arcade::event::keys::SLASH;
+                case SDLK_BACKSLASH:
+                    return arcade::event::keys::BACKSLASH;
+                case SDLK_BACKQUOTE:
+                    return arcade::event::keys::TILDE;
+                case SDLK_EQUALS:
+                    return arcade::event::keys::EQUAL;
+                case SDLK_MINUS:
+                    return arcade::event::keys::DASH;
+                case SDLK_KP_PLUS:
+                    return arcade::event::keys::ADD;
+                case SDLK_KP_MINUS:
+                    return arcade::event::keys::SUBTRACT;
+                case SDLK_KP_MULTIPLY:
+                    return arcade::event::keys::MULTIPLY;
+                case SDLK_KP_DIVIDE:
+                    return arcade::event::keys::DIVIDE;
+                case SDLK_INSERT:
+                    return arcade::event::keys::INSERT;
+                case SDLK_HOME:
+                    return arcade::event::keys::HOME;
+                case SDLK_END:
+                    return arcade::event::keys::END;
+                case SDLK_PAGEUP:
+                    return arcade::event::keys::PAGEUP;
+                case SDLK_PAGEDOWN:
+                    return arcade::event::keys::PAGEDOWN;
+                case SDLK_DELETE:
+                    return arcade::event::keys::DELETE;
+                case SDLK_0:
+                    return arcade::event::keys::NUM0;
+                case SDLK_1:
+                    return arcade::event::keys::NUM1;
+                case SDLK_2:
+                    return arcade::event::keys::NUM2;
+                case SDLK_3:
+                    return arcade::event::keys::NUM3;
+                case SDLK_4:
+                    return arcade::event::keys::NUM4;
+                case SDLK_5:
+                    return arcade::event::keys::NUM5;
+                case SDLK_6:
+                    return arcade::event::keys::NUM6;
+                case SDLK_7:
+                    return arcade::event::keys::NUM7;
+                case SDLK_8:
+                    return arcade::event::keys::NUM8;
+                case SDLK_9:
+                    return arcade::event::keys::NUM9;
+                default:
+                    return arcade::event::keys::UNKNOWN;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+PROJECT_NAME           = Arcade
+OUTPUT_DIRECTORY      = doc
+
+BRIEF                  = YES
+AUTHOR                 = Alexandre DOUARD et Adrien AUDIARD
+
+INPUT                  = ./inc
+
+GENERATE_HTML          = YES
+
+HTML_OUTPUT            = doc
+OPEN_LAUNCHER          = YES
+
+EXCLUDE_PATTERNS       = /.*\.mk$|/.*\.h$|\.DS_Store/

@@ -1,0 +1,159 @@
+\doxysection{arcade\+::ATexture Class Reference}
+\hypertarget{classarcade_1_1ATexture}{}\label{classarcade_1_1ATexture}\index{arcade::ATexture@{arcade::ATexture}}
+Inheritance diagram for arcade\+::ATexture\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1ATexture}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classarcade_1_1ATexture_aed249a0beed2b848597c97b9895e85fe}\label{classarcade_1_1ATexture_aed249a0beed2b848597c97b9895e85fe} 
+{\bfseries ATexture} (\mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{id}}, std\+::string \mbox{\hyperlink{classarcade_1_1Library}{texture\+Path}}, Ptr\+Text\+Object \mbox{\hyperlink{classarcade_1_1Library}{text}})
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ATexture_aedb3a8a2e01dddc8483c5ad3f851582f}{set\+Id}} (\mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{id}}) \mbox{\hyperlink{classarcade_1_1Library}{override}}
+\begin{DoxyCompactList}\small\item\em Sets the ID of the texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1ATexture_a8d4359a914360565ed19913ccdd3340e}{get\+Id}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{override}}
+\begin{DoxyCompactList}\small\item\em Gets the ID of the texture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ATexture_a74fada4867651b17a3a58ca1f3d97886}{set\+Texture\+Path}} (std\+::string \mbox{\hyperlink{classarcade_1_1Library}{texture\+Path}}) \mbox{\hyperlink{classarcade_1_1Library}{override}}
+\begin{DoxyCompactList}\small\item\em Sets the path to the texture file. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classarcade_1_1ATexture_af9162733ed50603d497efd40fc0d034b}{get\+Texture\+Path}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{override}}
+\begin{DoxyCompactList}\small\item\em Gets the path to the texture file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ATexture_aa15fbe90a92ffacb4227b6ed1f88827d}{set\+Texture\+Text}} (Ptr\+Text\+Object \mbox{\hyperlink{classarcade_1_1Library}{text}}) \mbox{\hyperlink{classarcade_1_1Library}{override}}
+\begin{DoxyCompactList}\small\item\em Sets a text object to be used as the texture source (optional). \end{DoxyCompactList}\item 
+Ptr\+Text\+Object \mbox{\hyperlink{classarcade_1_1ATexture_a4433b8f6d2602fb2809b20a4e9fc1b3d}{get\+Texture\+Text}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{override}}
+\begin{DoxyCompactList}\small\item\em Gets the text object used as the texture source (optional). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classarcade_1_1ITexture}{arcade\+::\+ITexture}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1ITexture_a8d8a565c95b50bbd660cee55bf4d3452}{\texorpdfstring{$\sim$}{\string~}\+ITexture}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1ITexture}{ITexture}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1ATexture_a8d4359a914360565ed19913ccdd3340e}\label{classarcade_1_1ATexture_a8d4359a914360565ed19913ccdd3340e} 
+\index{arcade::ATexture@{arcade::ATexture}!getId@{getId}}
+\index{getId@{getId}!arcade::ATexture@{arcade::ATexture}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{int}} arcade\+::\+ATexture\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the ID of the texture. 
+
+This function returns the current ID assigned to the texture.
+
+\begin{DoxyReturn}{Returns}
+The ID of the texture. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1ITexture_a376ab7ed298d3683fff0efe5f05685a9}{arcade\+::\+ITexture}}.
+
+\Hypertarget{classarcade_1_1ATexture_af9162733ed50603d497efd40fc0d034b}\label{classarcade_1_1ATexture_af9162733ed50603d497efd40fc0d034b} 
+\index{arcade::ATexture@{arcade::ATexture}!getTexturePath@{getTexturePath}}
+\index{getTexturePath@{getTexturePath}!arcade::ATexture@{arcade::ATexture}}
+\doxysubsubsection{\texorpdfstring{getTexturePath()}{getTexturePath()}}
+{\footnotesize\ttfamily std\+::string arcade\+::\+ATexture\+::get\+Texture\+Path (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the path to the texture file. 
+
+This function returns the current file path associated with the texture.
+
+\begin{DoxyReturn}{Returns}
+The path to the texture file. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1ITexture_aeb4b0bdcf4470da90226da8cb5ab0930}{arcade\+::\+ITexture}}.
+
+\Hypertarget{classarcade_1_1ATexture_a4433b8f6d2602fb2809b20a4e9fc1b3d}\label{classarcade_1_1ATexture_a4433b8f6d2602fb2809b20a4e9fc1b3d} 
+\index{arcade::ATexture@{arcade::ATexture}!getTextureText@{getTextureText}}
+\index{getTextureText@{getTextureText}!arcade::ATexture@{arcade::ATexture}}
+\doxysubsubsection{\texorpdfstring{getTextureText()}{getTextureText()}}
+{\footnotesize\ttfamily Ptr\+Text\+Object arcade\+::\+ATexture\+::get\+Texture\+Text (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the text object used as the texture source (optional). 
+
+This function returns a shared pointer to the text object used as the texture source, if applicable. If text textures are not supported, this function might return nullptr.
+
+\begin{DoxyReturn}{Returns}
+Shared pointer to the text object used as texture source (if applicable). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1ITexture_acafc1644137b6a9f56dc81573e99db04}{arcade\+::\+ITexture}}.
+
+\Hypertarget{classarcade_1_1ATexture_aedb3a8a2e01dddc8483c5ad3f851582f}\label{classarcade_1_1ATexture_aedb3a8a2e01dddc8483c5ad3f851582f} 
+\index{arcade::ATexture@{arcade::ATexture}!setId@{setId}}
+\index{setId@{setId}!arcade::ATexture@{arcade::ATexture}}
+\doxysubsubsection{\texorpdfstring{setId()}{setId()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+ATexture\+::set\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{int}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the ID of the texture. 
+
+This function sets an identifier for the texture, likely used for internal management within the library. This ID might be used to retrieve the texture data or associate it with other objects.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The new ID for the texture. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1ITexture_ae8240c192cc9d2260fc0f756a781d98d}{arcade\+::\+ITexture}}.
+
+\Hypertarget{classarcade_1_1ATexture_a74fada4867651b17a3a58ca1f3d97886}\label{classarcade_1_1ATexture_a74fada4867651b17a3a58ca1f3d97886} 
+\index{arcade::ATexture@{arcade::ATexture}!setTexturePath@{setTexturePath}}
+\index{setTexturePath@{setTexturePath}!arcade::ATexture@{arcade::ATexture}}
+\doxysubsubsection{\texorpdfstring{setTexturePath()}{setTexturePath()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+ATexture\+::set\+Texture\+Path (\begin{DoxyParamCaption}\item[{std\+::string}]{texture\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the path to the texture file. 
+
+This function specifies the file path of the image file containing the texture data.
+
+
+\begin{DoxyParams}{Parameters}
+{\em texture\+Path} & The path to the texture file. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1ITexture_a9b201c1a1c222d6c52d783e0e286e8cf}{arcade\+::\+ITexture}}.
+
+\Hypertarget{classarcade_1_1ATexture_aa15fbe90a92ffacb4227b6ed1f88827d}\label{classarcade_1_1ATexture_aa15fbe90a92ffacb4227b6ed1f88827d} 
+\index{arcade::ATexture@{arcade::ATexture}!setTextureText@{setTextureText}}
+\index{setTextureText@{setTextureText}!arcade::ATexture@{arcade::ATexture}}
+\doxysubsubsection{\texorpdfstring{setTextureText()}{setTextureText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+ATexture\+::set\+Texture\+Text (\begin{DoxyParamCaption}\item[{Ptr\+Text\+Object}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets a text object to be used as the texture source (optional). 
+
+This function allows using text content as a texture source. Not all implementations might support this functionality.
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & Shared pointer to a text object used as the texture source. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1ITexture_a65db44b530818a39dcacbb1675c9db0d}{arcade\+::\+ITexture}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/ATexture.\+hpp\end{DoxyCompactItemize}

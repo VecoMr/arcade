@@ -1,0 +1,289 @@
+\doxysection{arcade\+::IText\+Object Class Reference}
+\hypertarget{classarcade_1_1ITextObject}{}\label{classarcade_1_1ITextObject}\index{arcade::ITextObject@{arcade::ITextObject}}
+
+
+Interface for text objects.  
+
+
+
+
+{\ttfamily \#include $<$IObject.\+hpp$>$}
+
+Inheritance diagram for arcade\+::IText\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classarcade_1_1ITextObject}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1ITextObject_a81e05b7906def642ae64129e4baffa97}{\texorpdfstring{$\sim$}{\string~}\+IText\+Object}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1ITextObject}{IText\+Object}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ITextObject_a566021aad9d69835d7cb8652dac78499}{set\+Content}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} std\+::string \mbox{\hyperlink{classarcade_1_1Library}{str}})=0
+\begin{DoxyCompactList}\small\item\em Sets the text content to be displayed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} std\+::string \mbox{\hyperlink{classarcade_1_1ITextObject_a9f2a571acee1e3c670415dbbf139023e}{get\+Content}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the text content of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ITextObject_a5f901efbf884b9a09b10cdd8046d7a6a}{set\+Size}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{size}})=0
+\begin{DoxyCompactList}\small\item\em Sets the font size for the text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1ITextObject_a2d886a63272b805bd9882f686d68a2b0}{get\+Size}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the font size of the text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ITextObject_a80be571781641275a28053a9322902a8}{set\+Color}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{color}})=0
+\begin{DoxyCompactList}\small\item\em Sets the color of the text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1ITextObject_ac209a0b7fea767cca1fdc921c834d1ac}{get\+Color}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the color of the text. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ITextObject_a6be5c58b940978bf9e52bf1ce2fd72ba}{set\+Id\+Font\+Family}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{id}})=0
+\begin{DoxyCompactList}\small\item\em Sets the ID of the font family to use (optional). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \& \mbox{\hyperlink{classarcade_1_1ITextObject_acf46c480f8c9b503035edc8196c464e4}{get\+Id\+Font\+Family}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets a reference to the ID of the font family (optional). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ITextObject_ad88e69dfb90c9ab6d85c677277bdb96d}{set\+Back\+Ground\+Color}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{color}})=0
+\begin{DoxyCompactList}\small\item\em Sets the background color of the text object (optional). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1ITextObject_a20be5c48eb1b4d60ef115eba79595de9}{get\+Back\+Ground\+Color}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the background color of the text object (optional). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classarcade_1_1IObject}{arcade\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}{\texorpdfstring{$\sim$}{\string~}\+IObject}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IObject}{IObject}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}{set\+Type}} (Object\+Type type)=0
+\begin{DoxyCompactList}\small\item\em Sets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} Object\+Type \mbox{\hyperlink{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}{get\+Type}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}{is\+Display}} (\mbox{\hyperlink{classarcade_1_1Library}{bool}} is\+Display)=0
+\begin{DoxyCompactList}\small\item\em Sets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{is\+Display}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}{set\+Pos}} (\mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{pos}})=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}{get\+Pos}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}{set\+Bounds}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{bounds}})=0
+\begin{DoxyCompactList}\small\item\em Sets the bounding rectangle of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}{get\+Bounds}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the bounding rectangle of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for text objects. 
+
+This interface inherits from {\ttfamily \doxylink{classarcade_1_1IObject}{IObject}} and defines functionalities specific to text objects. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1ITextObject_a81e05b7906def642ae64129e4baffa97}\label{classarcade_1_1ITextObject_a81e05b7906def642ae64129e4baffa97} 
+\index{arcade::ITextObject@{arcade::ITextObject}!````~ITextObject@{\texorpdfstring{$\sim$}{\string~}ITextObject}}
+\index{````~ITextObject@{\texorpdfstring{$\sim$}{\string~}ITextObject}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ITextObject()}{\string~ITextObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+IText\+Object\+::\texorpdfstring{$\sim$}{\string~}\+IText\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1ITextObject}{IText\+Object}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1ITextObject_a20be5c48eb1b4d60ef115eba79595de9}\label{classarcade_1_1ITextObject_a20be5c48eb1b4d60ef115eba79595de9} 
+\index{arcade::ITextObject@{arcade::ITextObject}!getBackGroundColor@{getBackGroundColor}}
+\index{getBackGroundColor@{getBackGroundColor}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{getBackGroundColor()}{getBackGroundColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} arcade\+::\+IText\+Object\+::get\+Back\+Ground\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the background color of the text object (optional). 
+
+This function returns the current background color of the text object as a {\ttfamily \doxylink{structarcade_1_1color__t}{color\+\_\+t}} structure. If background rendering is not supported, this function might return a default color.
+
+\begin{DoxyReturn}{Returns}
+The current background color of the text (if applicable). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_a87a08c97ec19548644a9d3308712adf2}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_ac209a0b7fea767cca1fdc921c834d1ac}\label{classarcade_1_1ITextObject_ac209a0b7fea767cca1fdc921c834d1ac} 
+\index{arcade::ITextObject@{arcade::ITextObject}!getColor@{getColor}}
+\index{getColor@{getColor}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} arcade\+::\+IText\+Object\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the color of the text. 
+
+This function returns the current color of the text as a {\ttfamily \doxylink{structarcade_1_1color__t}{color\+\_\+t}} structure.
+
+\begin{DoxyReturn}{Returns}
+The current color of the text. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_af4e2499cf7a50a1ff5a7361bca0da7a3}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_a9f2a571acee1e3c670415dbbf139023e}\label{classarcade_1_1ITextObject_a9f2a571acee1e3c670415dbbf139023e} 
+\index{arcade::ITextObject@{arcade::ITextObject}!getContent@{getContent}}
+\index{getContent@{getContent}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} std\+::string arcade\+::\+IText\+Object\+::get\+Content (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the text content of the object. 
+
+This function returns the current string content displayed by the text object.
+
+\begin{DoxyReturn}{Returns}
+The current text content of the object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_afec6544b34ab66b8f5f1426f165e6668}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_acf46c480f8c9b503035edc8196c464e4}\label{classarcade_1_1ITextObject_acf46c480f8c9b503035edc8196c464e4} 
+\index{arcade::ITextObject@{arcade::ITextObject}!getIdFontFamily@{getIdFontFamily}}
+\index{getIdFontFamily@{getIdFontFamily}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{getIdFontFamily()}{getIdFontFamily()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \& arcade\+::\+IText\+Object\+::get\+Id\+Font\+Family (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets a reference to the ID of the font family (optional). 
+
+This function returns a reference to the integer ID set for the font family. It may return a reference to a temporary variable if the ID is internally managed. Modifications made through this reference might not persist.
+
+\begin{DoxyReturn}{Returns}
+Reference to the ID of the font family (if applicable). 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_ab3980b1ef028fa3eec830ed27f12a448}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_a2d886a63272b805bd9882f686d68a2b0}\label{classarcade_1_1ITextObject_a2d886a63272b805bd9882f686d68a2b0} 
+\index{arcade::ITextObject@{arcade::ITextObject}!getSize@{getSize}}
+\index{getSize@{getSize}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} arcade\+::\+IText\+Object\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the font size of the text. 
+
+This function returns the current font size used to render the text.
+
+\begin{DoxyReturn}{Returns}
+The current font size of the text. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_aff62bca3b2cc6dab277adf670463ad1a}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_ad88e69dfb90c9ab6d85c677277bdb96d}\label{classarcade_1_1ITextObject_ad88e69dfb90c9ab6d85c677277bdb96d} 
+\index{arcade::ITextObject@{arcade::ITextObject}!setBackGroundColor@{setBackGroundColor}}
+\index{setBackGroundColor@{setBackGroundColor}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{setBackGroundColor()}{setBackGroundColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IText\+Object\+::set\+Back\+Ground\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the background color of the text object (optional). 
+
+This function allows setting a background color for the text object. Not all implementations might support text background rendering.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The new background color for the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_a6023ce450e8cb1423589e51c1188a759}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_a80be571781641275a28053a9322902a8}\label{classarcade_1_1ITextObject_a80be571781641275a28053a9322902a8} 
+\index{arcade::ITextObject@{arcade::ITextObject}!setColor@{setColor}}
+\index{setColor@{setColor}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IText\+Object\+::set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the color of the text. 
+
+This function sets the color of the text using a {\ttfamily \doxylink{structarcade_1_1color__t}{color\+\_\+t}} structure with red, green, blue, and alpha channels.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The new color for the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_accbe717cad5feb783a30229e11e340b8}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_a566021aad9d69835d7cb8652dac78499}\label{classarcade_1_1ITextObject_a566021aad9d69835d7cb8652dac78499} 
+\index{arcade::ITextObject@{arcade::ITextObject}!setContent@{setContent}}
+\index{setContent@{setContent}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{setContent()}{setContent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IText\+Object\+::set\+Content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} std\+::string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the text content to be displayed. 
+
+This function sets the string content that will be displayed as text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & The new text content for the object. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_ae9756bab5be1f2accd91543b74bdf8a5}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_a6be5c58b940978bf9e52bf1ce2fd72ba}\label{classarcade_1_1ITextObject_a6be5c58b940978bf9e52bf1ce2fd72ba} 
+\index{arcade::ITextObject@{arcade::ITextObject}!setIdFontFamily@{setIdFontFamily}}
+\index{setIdFontFamily@{setIdFontFamily}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{setIdFontFamily()}{setIdFontFamily()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IText\+Object\+::set\+Id\+Font\+Family (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{int}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the ID of the font family to use (optional). 
+
+This function allows setting an identifier for the desired font family. The interpretation and usage of this ID depend on the specific implementation of the arcade library. It\textquotesingle{}s possible that the library manages font resources and uses this ID to retrieve the appropriate font.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the font family. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_af35e148c5aa29631f824cd5307fc2d7c}{arcade\+::\+AText}}.
+
+\Hypertarget{classarcade_1_1ITextObject_a5f901efbf884b9a09b10cdd8046d7a6a}\label{classarcade_1_1ITextObject_a5f901efbf884b9a09b10cdd8046d7a6a} 
+\index{arcade::ITextObject@{arcade::ITextObject}!setSize@{setSize}}
+\index{setSize@{setSize}!arcade::ITextObject@{arcade::ITextObject}}
+\doxysubsubsection{\texorpdfstring{setSize()}{setSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IText\+Object\+::set\+Size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{int}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the font size for the text. 
+
+This function sets the size of the font used to render the text.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The new font size for the text. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1AText_a4897e3a43f9f4ae553428b2f619aa234}{arcade\+::\+AText}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IObject.\+hpp\end{DoxyCompactItemize}

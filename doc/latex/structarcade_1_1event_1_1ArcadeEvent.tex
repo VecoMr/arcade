@@ -1,0 +1,43 @@
+\doxysection{arcade\+::event\+::Arcade\+Event Struct Reference}
+\hypertarget{structarcade_1_1event_1_1ArcadeEvent}{}\label{structarcade_1_1event_1_1ArcadeEvent}\index{arcade::event::ArcadeEvent@{arcade::event::ArcadeEvent}}
+
+
+Structure representing an arcade event.  
+
+
+
+
+{\ttfamily \#include $<$Event.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structarcade_1_1event_1_1ArcadeEvent_ab1ab66e0d000b9425926270531a8e6a3}\label{structarcade_1_1event_1_1ArcadeEvent_ab1ab66e0d000b9425926270531a8e6a3} 
+\mbox{\hyperlink{classarcade_1_1Library}{bool}} {\bfseries operator==} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1event_1_1ArcadeEvent}{Arcade\+Event}} \&\mbox{\hyperlink{classarcade_1_1Library}{other}}) \mbox{\hyperlink{classarcade_1_1Library}{const}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{structarcade_1_1event_1_1ArcadeEvent_ab2a540fe743d48000267deb014a1992b}\label{structarcade_1_1event_1_1ArcadeEvent_ab2a540fe743d48000267deb014a1992b} 
+Event\+Type {\bfseries type}
+\item 
+\Hypertarget{structarcade_1_1event_1_1ArcadeEvent_aedd064a2f6707bae29484eb603e2aa24}\label{structarcade_1_1event_1_1ArcadeEvent_aedd064a2f6707bae29484eb603e2aa24} 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{structarcade_1_1event_1_1keyboard}{keyboard}} {\bfseries evKey}\\
+\>\mbox{\hyperlink{structarcade_1_1event_1_1mouse}{mouse}} {\bfseries evMouse}\\
+\>\mbox{\hyperlink{structarcade_1_1event_1_1window}{window}} {\bfseries evWindow}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Structure representing an arcade event. 
+
+This structure holds information about an arcade event, including the event type (KEYBOARD, MOUSE, WINDOW, etc.) and the specific event data. This event structure is use to represent events that can be received by the Core to be convert in \doxylink{structarcade_1_1event_1_1GameEvent}{Game\+Event}. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/Event.\+hpp\end{DoxyCompactItemize}

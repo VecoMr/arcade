@@ -1,0 +1,113 @@
+\doxysection{arcade\+::IBackground Class Reference}
+\hypertarget{classarcade_1_1IBackground}{}\label{classarcade_1_1IBackground}\index{arcade::IBackground@{arcade::IBackground}}
+
+
+Interface for background objects.  
+
+
+
+
+{\ttfamily \#include $<$IObject.\+hpp$>$}
+
+Inheritance diagram for arcade\+::IBackground\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classarcade_1_1IBackground}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IBackground_a83a78f8cbe124257e3f485e574236b6c}{\texorpdfstring{$\sim$}{\string~}\+IBackground}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IBackground}{IBackground}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IBackground_abf8c16cdf88c2a3a9b7bb694c9718916}{set\+Color}} (\mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{color}})=0
+\begin{DoxyCompactList}\small\item\em Sets the background color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IBackground_acb82118467648ad907bdab6a3bd7c655}{get\+Color}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the background color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classarcade_1_1IObject}{arcade\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}{\texorpdfstring{$\sim$}{\string~}\+IObject}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IObject}{IObject}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}{set\+Type}} (Object\+Type type)=0
+\begin{DoxyCompactList}\small\item\em Sets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} Object\+Type \mbox{\hyperlink{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}{get\+Type}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}{is\+Display}} (\mbox{\hyperlink{classarcade_1_1Library}{bool}} is\+Display)=0
+\begin{DoxyCompactList}\small\item\em Sets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{is\+Display}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}{set\+Pos}} (\mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{pos}})=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}{get\+Pos}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}{set\+Bounds}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{bounds}})=0
+\begin{DoxyCompactList}\small\item\em Sets the bounding rectangle of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}{get\+Bounds}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the bounding rectangle of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for background objects. 
+
+This interface defines functionalities for managing background elements within the game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1IBackground_a83a78f8cbe124257e3f485e574236b6c}\label{classarcade_1_1IBackground_a83a78f8cbe124257e3f485e574236b6c} 
+\index{arcade::IBackground@{arcade::IBackground}!````~IBackground@{\texorpdfstring{$\sim$}{\string~}IBackground}}
+\index{````~IBackground@{\texorpdfstring{$\sim$}{\string~}IBackground}!arcade::IBackground@{arcade::IBackground}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IBackground()}{\string~IBackground()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+IBackground\+::\texorpdfstring{$\sim$}{\string~}\+IBackground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1IBackground}{IBackground}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1IBackground_acb82118467648ad907bdab6a3bd7c655}\label{classarcade_1_1IBackground_acb82118467648ad907bdab6a3bd7c655} 
+\index{arcade::IBackground@{arcade::IBackground}!getColor@{getColor}}
+\index{getColor@{getColor}!arcade::IBackground@{arcade::IBackground}}
+\doxysubsubsection{\texorpdfstring{getColor()}{getColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} arcade\+::\+IBackground\+::get\+Color (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the background color. 
+
+This function returns the current color used for the background.
+
+\begin{DoxyReturn}{Returns}
+The current background color. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_aa3748b31f3f54b2f409d2b174e451640}{arcade\+::\+ABackground}}.
+
+\Hypertarget{classarcade_1_1IBackground_abf8c16cdf88c2a3a9b7bb694c9718916}\label{classarcade_1_1IBackground_abf8c16cdf88c2a3a9b7bb694c9718916} 
+\index{arcade::IBackground@{arcade::IBackground}!setColor@{setColor}}
+\index{setColor@{setColor}!arcade::IBackground@{arcade::IBackground}}
+\doxysubsubsection{\texorpdfstring{setColor()}{setColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IBackground\+::set\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the background color. 
+
+This function sets the color used to fill the background element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The new color for the background. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ABackground_ac6c942a9ec7f1bb0940115644950960f}{arcade\+::\+ABackground}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IObject.\+hpp\end{DoxyCompactItemize}

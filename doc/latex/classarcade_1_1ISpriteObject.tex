@@ -1,0 +1,157 @@
+\doxysection{arcade\+::ISprite\+Object Class Reference}
+\hypertarget{classarcade_1_1ISpriteObject}{}\label{classarcade_1_1ISpriteObject}\index{arcade::ISpriteObject@{arcade::ISpriteObject}}
+
+
+Interface for sprite objects.  
+
+
+
+
+{\ttfamily \#include $<$IObject.\+hpp$>$}
+
+Inheritance diagram for arcade\+::ISprite\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classarcade_1_1ISpriteObject}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1ISpriteObject_afacbc69708e0be42a39a9159d725436d}{\texorpdfstring{$\sim$}{\string~}\+ISprite\+Object}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1ISpriteObject}{ISprite\+Object}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ISpriteObject_ad6f2d3a9af382fce830c30be6f577c28}{set\+Id\+Texture}} (\mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{id}})=0
+\begin{DoxyCompactList}\small\item\em Sets the ID of the texture associated with the sprite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1ISpriteObject_a12efe6b40e6375418ce5efa0cd61cee2}{get\+Id\+Texture}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the ID of the texture associated with the sprite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1ISpriteObject_a1006c1f5c152b46780c6eaa230a095e4}{set\+Shape}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{shape}})=0
+\begin{DoxyCompactList}\small\item\em Sets the shape (position, width, and height) of the sprite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1ISpriteObject_a45ad60312d7073cccdcb2d13c6fe4d2d}{get\+Shape}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the shape (position, width, and height) of the sprite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classarcade_1_1IObject}{arcade\+::\+IObject}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IObject_a0879cca3df14e7f3096a83c61cee10a5}{\texorpdfstring{$\sim$}{\string~}\+IObject}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IObject}{IObject}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a22cd1f6ce71d3310178a4bf0e401c80c}{set\+Type}} (Object\+Type type)=0
+\begin{DoxyCompactList}\small\item\em Sets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} Object\+Type \mbox{\hyperlink{classarcade_1_1IObject_a0919054d5cca3046cae86cda8078a10a}{get\+Type}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the type of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a82682de29a620fcc608d642dadb7353b}{is\+Display}} (\mbox{\hyperlink{classarcade_1_1Library}{bool}} is\+Display)=0
+\begin{DoxyCompactList}\small\item\em Sets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IObject_a0b86bdc57685e012a097a3a11902cd7e}{is\+Display}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the visibility of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a137622ea802e74a1c4d285ad1a14fbf7}{set\+Pos}} (\mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{pos}})=0
+\begin{DoxyCompactList}\small\item\em Sets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1pos__t}{pos\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a7b6e0fb5c4b5adc9cdd3132225957eac}{get\+Pos}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the position of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IObject_a6713d8472a5ed34cf6eed103aa586da2}{set\+Bounds}} (\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{bounds}})=0
+\begin{DoxyCompactList}\small\item\em Sets the bounding rectangle of the object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} \mbox{\hyperlink{classarcade_1_1IObject_a0ba4e9ce12c23c060100b4b7aaa28348}{get\+Bounds}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Gets the bounding rectangle of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for sprite objects. 
+
+This interface inherits from {\ttfamily \doxylink{classarcade_1_1IObject}{IObject}} and defines functionalities specific to sprite objects. Sprites are graphical elements typically rendered using textures. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1ISpriteObject_afacbc69708e0be42a39a9159d725436d}\label{classarcade_1_1ISpriteObject_afacbc69708e0be42a39a9159d725436d} 
+\index{arcade::ISpriteObject@{arcade::ISpriteObject}!````~ISpriteObject@{\texorpdfstring{$\sim$}{\string~}ISpriteObject}}
+\index{````~ISpriteObject@{\texorpdfstring{$\sim$}{\string~}ISpriteObject}!arcade::ISpriteObject@{arcade::ISpriteObject}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}ISpriteObject()}{\string~ISpriteObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+ISprite\+Object\+::\texorpdfstring{$\sim$}{\string~}\+ISprite\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1ISpriteObject}{ISprite\+Object}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1ISpriteObject_a12efe6b40e6375418ce5efa0cd61cee2}\label{classarcade_1_1ISpriteObject_a12efe6b40e6375418ce5efa0cd61cee2} 
+\index{arcade::ISpriteObject@{arcade::ISpriteObject}!getIdTexture@{getIdTexture}}
+\index{getIdTexture@{getIdTexture}!arcade::ISpriteObject@{arcade::ISpriteObject}}
+\doxysubsubsection{\texorpdfstring{getIdTexture()}{getIdTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} arcade\+::\+ISprite\+Object\+::get\+Id\+Texture (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the ID of the texture associated with the sprite. 
+
+This function returns the current ID of the texture used to render the sprite.
+
+\begin{DoxyReturn}{Returns}
+The ID of the texture associated with the sprite. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ASprite_a86e88649e647e16ed7c255971e9b0ce0}{arcade\+::\+ASprite}}.
+
+\Hypertarget{classarcade_1_1ISpriteObject_a45ad60312d7073cccdcb2d13c6fe4d2d}\label{classarcade_1_1ISpriteObject_a45ad60312d7073cccdcb2d13c6fe4d2d} 
+\index{arcade::ISpriteObject@{arcade::ISpriteObject}!getShape@{getShape}}
+\index{getShape@{getShape}!arcade::ISpriteObject@{arcade::ISpriteObject}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}} arcade\+::\+ISprite\+Object\+::get\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the shape (position, width, and height) of the sprite. 
+
+This function returns the current shape definition of the sprite as a {\ttfamily \doxylink{structarcade_1_1shape__t}{shape\+\_\+t}} structure.
+
+\begin{DoxyReturn}{Returns}
+The current shape definition of the sprite. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ASprite_afb92165bad8068691fc7d0b5826c68c9}{arcade\+::\+ASprite}}.
+
+\Hypertarget{classarcade_1_1ISpriteObject_ad6f2d3a9af382fce830c30be6f577c28}\label{classarcade_1_1ISpriteObject_ad6f2d3a9af382fce830c30be6f577c28} 
+\index{arcade::ISpriteObject@{arcade::ISpriteObject}!setIdTexture@{setIdTexture}}
+\index{setIdTexture@{setIdTexture}!arcade::ISpriteObject@{arcade::ISpriteObject}}
+\doxysubsubsection{\texorpdfstring{setIdTexture()}{setIdTexture()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+ISprite\+Object\+::set\+Id\+Texture (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{int}}}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the ID of the texture associated with the sprite. 
+
+This function sets an identifier for the texture used to render the sprite. The interpretation and usage of this ID depend on the specific implementation of the arcade library. It\textquotesingle{}s likely that the library manages texture resources and uses this ID to retrieve the appropriate texture for the sprite.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The ID of the texture to associate with the sprite. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ASprite_aa7aa4ac43a4566a4b7b83d5a54db4abb}{arcade\+::\+ASprite}}.
+
+\Hypertarget{classarcade_1_1ISpriteObject_a1006c1f5c152b46780c6eaa230a095e4}\label{classarcade_1_1ISpriteObject_a1006c1f5c152b46780c6eaa230a095e4} 
+\index{arcade::ISpriteObject@{arcade::ISpriteObject}!setShape@{setShape}}
+\index{setShape@{setShape}!arcade::ISpriteObject@{arcade::ISpriteObject}}
+\doxysubsubsection{\texorpdfstring{setShape()}{setShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+ISprite\+Object\+::set\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1shape__t}{shape\+\_\+t}}}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the shape (position, width, and height) of the sprite. 
+
+This function defines the position, width, and height of the rectangular area occupied by the sprite on the screen. It uses a {\ttfamily \doxylink{structarcade_1_1shape__t}{shape\+\_\+t}} structure containing position, width, and height.
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & The new shape definition for the sprite. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classarcade_1_1ASprite_a59c0204b91f47277a5c7d7fd1c56efdc}{arcade\+::\+ASprite}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IObject.\+hpp\end{DoxyCompactItemize}

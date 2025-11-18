@@ -1,0 +1,144 @@
+\doxysection{arcade\+::AGrid Class Reference}
+\hypertarget{classarcade_1_1AGrid}{}\label{classarcade_1_1AGrid}\index{arcade::AGrid@{arcade::AGrid}}
+Inheritance diagram for arcade\+::AGrid\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classarcade_1_1AGrid}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+VPtr\+Object \& \mbox{\hyperlink{classarcade_1_1AGrid_a083355c1d8e01338a80537612c800506}{get\+Objects}} () \mbox{\hyperlink{classarcade_1_1Library}{final}}
+\begin{DoxyCompactList}\small\item\em Gets a reference to the game objects. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{classarcade_1_1AGrid_aa746f8a1394022547ec7df9e874956ac}{get\+Font\+Paths}} () \mbox{\hyperlink{classarcade_1_1Library}{final}}
+\begin{DoxyCompactList}\small\item\em Gets the list of font paths used by the game. \end{DoxyCompactList}\item 
+VPtr\+Texture \& \mbox{\hyperlink{classarcade_1_1AGrid_a5ddc98ee6816097dab699e09e4eb8df7}{get\+Textures}} () \mbox{\hyperlink{classarcade_1_1Library}{final}}
+\begin{DoxyCompactList}\small\item\em Gets a reference to the game\textquotesingle{}s textures. \end{DoxyCompactList}\item 
+\Hypertarget{classarcade_1_1AGrid_a63953c138fecf3dd8f8fc34eca74a861}\label{classarcade_1_1AGrid_a63953c138fecf3dd8f8fc34eca74a861} 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} {\bfseries add\+Info} (\mbox{\hyperlink{classarcade_1_1Library}{const}} std\+::string \mbox{\hyperlink{classarcade_1_1Library}{info}}, \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{value}}, \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{color}})
+\item 
+\Hypertarget{classarcade_1_1AGrid_a00cea6e855258ecc36187f4e9eb70df1}\label{classarcade_1_1AGrid_a00cea6e855258ecc36187f4e9eb70df1} 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} {\bfseries update\+Info} (\mbox{\hyperlink{classarcade_1_1Library}{const}} std\+::string \mbox{\hyperlink{classarcade_1_1Library}{info}}, \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1Library}{value}}, \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1windowParameters__s}{window\+Parameters\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{windowP}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classarcade_1_1IGames}{arcade\+::\+IGames}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IGames_a09b8a87a45e57c72a799a55bdcbcf624}{\texorpdfstring{$\sim$}{\string~}\+IGames}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IGames}{IGames}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGames_aad91216603aac498bc7a533da7a9e6a8}{init\+Game}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} Ptr\+WindowP \mbox{\hyperlink{classarcade_1_1Library}{windowP}})=0
+\begin{DoxyCompactList}\small\item\em Initializes the game with the provided window parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGames_a0284cb9f0ef7b06f41adc1854d768a23}{destroy\+Game}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroys the game and releases associated resources. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGames_afbf2c22245d4b652dd5704ad06654591}{restart\+Game}} ()=0
+\begin{DoxyCompactList}\small\item\em Restarts the current game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IGames_a38c3123ff3869df59b6c8304b76fa240}{is\+Game\+Over}} ()=0
+\begin{DoxyCompactList}\small\item\em Checks if the game is over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} State \mbox{\hyperlink{classarcade_1_1IGames_a57715c47917d2c2714119a590367ebbd}{execute}} (VGame\+Event \&\mbox{\hyperlink{classarcade_1_1Library}{events}})=0
+\begin{DoxyCompactList}\small\item\em Processes game events and updates the game state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \mbox{\hyperlink{classarcade_1_1IGames_a7319bef6f44353211fefd91d54311d84}{get\+Score}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the current game score. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classarcade_1_1AGrid_af46949624d283f3308224296e10574c9}\label{classarcade_1_1AGrid_af46949624d283f3308224296e10574c9} 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} {\bfseries \+\_\+set\+Object\+Position\+And\+Scale} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1windowParameters__s}{window\+Parameters\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{windowP}})
+\item 
+\Hypertarget{classarcade_1_1AGrid_ad4f2748352ff732c964be9d84cb17694}\label{classarcade_1_1AGrid_ad4f2748352ff732c964be9d84cb17694} 
+\mbox{\hyperlink{classarcade_1_1Library}{void}} {\bfseries \+\_\+set\+Size} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{size\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{row}}, \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{classarcade_1_1Library}{size\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{col}}, \mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \mbox{\hyperlink{classarcade_1_1Library}{bg\+\_\+color}}=\{100, 100, 100, 255\})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classarcade_1_1AGrid_a33f56b05a616a599b43d4a53149a26c5}\label{classarcade_1_1AGrid_a33f56b05a616a599b43d4a53149a26c5} 
+VPtr\+Object {\bfseries \+\_\+objects}
+\item 
+\Hypertarget{classarcade_1_1AGrid_a567e67cc1bbbc9e5d650dad5dab4e492}\label{classarcade_1_1AGrid_a567e67cc1bbbc9e5d650dad5dab4e492} 
+VPtr\+Texture {\bfseries \+\_\+textures}
+\item 
+\Hypertarget{classarcade_1_1AGrid_a9042fef643035209c534188fa82884f4}\label{classarcade_1_1AGrid_a9042fef643035209c534188fa82884f4} 
+std\+::vector$<$ std\+::string $>$ {\bfseries \+\_\+font\+Paths}
+\item 
+\Hypertarget{classarcade_1_1AGrid_ac0928c3ebe97a328cf167a8f68732d35}\label{classarcade_1_1AGrid_ac0928c3ebe97a328cf167a8f68732d35} 
+\mbox{\hyperlink{classarcade_1_1Library}{size\+\_\+t}} {\bfseries \+\_\+row}
+\item 
+\Hypertarget{classarcade_1_1AGrid_aa71e6dbea1709a18e750425bc3347133}\label{classarcade_1_1AGrid_aa71e6dbea1709a18e750425bc3347133} 
+\mbox{\hyperlink{classarcade_1_1Library}{size\+\_\+t}} {\bfseries \+\_\+col}
+\item 
+\Hypertarget{classarcade_1_1AGrid_a5617c0afc14fb822f712e042a60f368c}\label{classarcade_1_1AGrid_a5617c0afc14fb822f712e042a60f368c} 
+std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{classarcade_1_1Library}{int}} $>$ $>$ {\bfseries \+\_\+grid}
+\item 
+\Hypertarget{classarcade_1_1AGrid_aedcb801d12233bb7e935a4adf9c7279e}\label{classarcade_1_1AGrid_aedcb801d12233bb7e935a4adf9c7279e} 
+\mbox{\hyperlink{classarcade_1_1ABanner}{ABanner}} {\bfseries \+\_\+win\+Banner}
+\item 
+\Hypertarget{classarcade_1_1AGrid_aa7495655bad5a9224de0418cac3ae9ed}\label{classarcade_1_1AGrid_aa7495655bad5a9224de0418cac3ae9ed} 
+\mbox{\hyperlink{classarcade_1_1ABanner}{ABanner}} {\bfseries \+\_\+lose\+Banner}
+\item 
+\Hypertarget{classarcade_1_1AGrid_a2f6bd77a6942c990b7d7e04e25af4edd}\label{classarcade_1_1AGrid_a2f6bd77a6942c990b7d7e04e25af4edd} 
+\mbox{\hyperlink{classarcade_1_1ABanner}{ABanner}} {\bfseries \+\_\+pause\+Banner}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1AGrid_aa746f8a1394022547ec7df9e874956ac}\label{classarcade_1_1AGrid_aa746f8a1394022547ec7df9e874956ac} 
+\index{arcade::AGrid@{arcade::AGrid}!getFontPaths@{getFontPaths}}
+\index{getFontPaths@{getFontPaths}!arcade::AGrid@{arcade::AGrid}}
+\doxysubsubsection{\texorpdfstring{getFontPaths()}{getFontPaths()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ \& arcade\+::\+AGrid\+::get\+Font\+Paths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Gets the list of font paths used by the game. 
+
+This function provides a reference to a vector of strings containing the file paths for the fonts used in the game. These fonts are likely loaded for displaying text elements.
+
+\begin{DoxyReturn}{Returns}
+Reference to a vector containing font file paths (strings). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IGames_a11eeb441669458a490d885c697f6b5c8}{arcade\+::\+IGames}}.
+
+\Hypertarget{classarcade_1_1AGrid_a083355c1d8e01338a80537612c800506}\label{classarcade_1_1AGrid_a083355c1d8e01338a80537612c800506} 
+\index{arcade::AGrid@{arcade::AGrid}!getObjects@{getObjects}}
+\index{getObjects@{getObjects}!arcade::AGrid@{arcade::AGrid}}
+\doxysubsubsection{\texorpdfstring{getObjects()}{getObjects()}}
+{\footnotesize\ttfamily VPtr\+Object \& arcade\+::\+AGrid\+::get\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Gets a reference to the game objects. 
+
+This function provides a reference to a container (likely a vector) of {\ttfamily VPtr\+Object} objects representing the game objects managed by the game. These objects may include sprites, backgrounds, rect or text components.
+
+\begin{DoxyReturn}{Returns}
+Reference to a container holding VPtr\+Object objects (game objects). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IGames_aa0d7df4e5c7760409f9edb2e618afce0}{arcade\+::\+IGames}}.
+
+\Hypertarget{classarcade_1_1AGrid_a5ddc98ee6816097dab699e09e4eb8df7}\label{classarcade_1_1AGrid_a5ddc98ee6816097dab699e09e4eb8df7} 
+\index{arcade::AGrid@{arcade::AGrid}!getTextures@{getTextures}}
+\index{getTextures@{getTextures}!arcade::AGrid@{arcade::AGrid}}
+\doxysubsubsection{\texorpdfstring{getTextures()}{getTextures()}}
+{\footnotesize\ttfamily VPtr\+Texture \& arcade\+::\+AGrid\+::get\+Textures (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [virtual]}}
+
+
+
+Gets a reference to the game\textquotesingle{}s textures. 
+
+This function provides a reference to a container (likely a vector) of "{}{\ttfamily VPtr\+Texture} objects representing the textures used in the game. These textures are likely used for rendering sprites.
+
+\begin{DoxyReturn}{Returns}
+Reference to a container holding VPtr\+Texture objects (game textures). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classarcade_1_1IGames_afdec75dd06e817802d67e1aa840b82b5}{arcade\+::\+IGames}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/AGrid.\+hpp\end{DoxyCompactItemize}

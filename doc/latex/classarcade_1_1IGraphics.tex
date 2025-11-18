@@ -1,0 +1,327 @@
+\doxysection{arcade\+::IGraphics Class Reference}
+\hypertarget{classarcade_1_1IGraphics}{}\label{classarcade_1_1IGraphics}\index{arcade::IGraphics@{arcade::IGraphics}}
+
+
+Interface for graphics functionalities in the arcade library.  
+
+
+
+
+{\ttfamily \#include $<$IGraphics.\+hpp$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1IGraphics_a36180b71cb8abaae9eedaeaa927a3475}{\texorpdfstring{$\sim$}{\string~}\+IGraphics}} ()=\mbox{\hyperlink{classarcade_1_1Library}{default}}
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classarcade_1_1IGraphics}{IGraphics}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a56c27670ae2357b4db74e231133775c5}{init\+Window}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} Ptr\+WindowP \mbox{\hyperlink{classarcade_1_1Library}{windowP}})=0
+\begin{DoxyCompactList}\small\item\em Initializes the graphics window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a945cf401d17d7df3015042ce804012cb}{destroy\+Window}} ()=0
+\begin{DoxyCompactList}\small\item\em Destroys the graphics window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a48ed34a32d2094d597cac663a44f3c7a}{clear\+Window}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \&\mbox{\hyperlink{classarcade_1_1Library}{color}}=def\+Back\+Color)=0
+\begin{DoxyCompactList}\small\item\em Clears the graphics window with a specific color. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} \mbox{\hyperlink{classarcade_1_1IGraphics_af38ad7822918284f8a7a0d25ace45f25}{is\+Open}} () \mbox{\hyperlink{classarcade_1_1Library}{const}} =0
+\begin{DoxyCompactList}\small\item\em Checks if the graphics window is open. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_aec99055a7f40af6ffa77393f4dc6dafd}{set\+Window\+Parameters}} (\mbox{\hyperlink{structarcade_1_1windowParameters__s}{window\+Parameters\+\_\+t}} \&\mbox{\hyperlink{classarcade_1_1Library}{window\+Parameters}})=0
+\begin{DoxyCompactList}\small\item\em Sets the window parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1windowParameters__s}{window\+Parameters\+\_\+t}} \& \mbox{\hyperlink{classarcade_1_1IGraphics_a5fff79428cbd96951a281517b6b44a27}{get\+Window\+Parameters}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the window parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a5b23586c036b33eb062c1cc520290c3b}{set\+Window\+Width}} (\mbox{\hyperlink{classarcade_1_1Library}{int}} height)=0
+\begin{DoxyCompactList}\small\item\em Sets the window width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a7f47765ada4515017c0f62893d2eee8b}{set\+Window\+Height}} (\mbox{\hyperlink{classarcade_1_1Library}{int}} height)=0
+\begin{DoxyCompactList}\small\item\em Sets the window height. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a38a0ba0150fad5f877d2e50bcbddd1ab}{set\+Window\+Title}} (std\+::string \&title)=0
+\begin{DoxyCompactList}\small\item\em Sets the window title. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \& \mbox{\hyperlink{classarcade_1_1IGraphics_a2aace04d9f73b6b8839440a4b8099e2f}{get\+Window\+Width}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the window width. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \& \mbox{\hyperlink{classarcade_1_1IGraphics_a0a9ac7170716c2ea52299242b852d635}{get\+Window\+Height}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the window height. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} std\+::string \& \mbox{\hyperlink{classarcade_1_1IGraphics_a7d27e3c106fa556ce9f8c31b2a50dfa5}{get\+Window\+Title}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the window title. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} VArcade\+Event \& \mbox{\hyperlink{classarcade_1_1IGraphics_a0a921fca17257001341acc54c88c2c50}{get\+Events}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets the accumulated arcade events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_ad721cc468ac3bf9fb50f3d79c3147f0e}{load\+Textures}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} VPtr\+Texture \&\mbox{\hyperlink{classarcade_1_1Library}{textures}})=0
+\begin{DoxyCompactList}\small\item\em Loads textures for use in rendering. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_ae3c5b4e12864497599d3f9be6a041e3d}{load\+Fonts}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} std\+::vector$<$ std\+::string $>$ \&\mbox{\hyperlink{classarcade_1_1Library}{fonts}})=0
+\begin{DoxyCompactList}\small\item\em Loads fonts for use in text rendering. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} \mbox{\hyperlink{classarcade_1_1IGraphics_a36d30e3c83fc9f0c9c3e367257cfd942}{display\+Objects}} (\mbox{\hyperlink{classarcade_1_1Library}{const}} VPtr\+Object \&\mbox{\hyperlink{classarcade_1_1Library}{objects}})=0
+\begin{DoxyCompactList}\small\item\em Displays a collection of game objects on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for graphics functionalities in the arcade library. 
+
+This interface defines the essential functions for graphics operations within the arcade library. Implementations of this interface provide the actual rendering capabilities for the application. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classarcade_1_1IGraphics_a36180b71cb8abaae9eedaeaa927a3475}\label{classarcade_1_1IGraphics_a36180b71cb8abaae9eedaeaa927a3475} 
+\index{arcade::IGraphics@{arcade::IGraphics}!````~IGraphics@{\texorpdfstring{$\sim$}{\string~}IGraphics}}
+\index{````~IGraphics@{\texorpdfstring{$\sim$}{\string~}IGraphics}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}IGraphics()}{\string~IGraphics()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} arcade\+::\+IGraphics\+::\texorpdfstring{$\sim$}{\string~}\+IGraphics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Destructor for \doxylink{classarcade_1_1IGraphics}{IGraphics}. 
+
+Virtual destructor to ensure proper cleanup in derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classarcade_1_1IGraphics_a48ed34a32d2094d597cac663a44f3c7a}\label{classarcade_1_1IGraphics_a48ed34a32d2094d597cac663a44f3c7a} 
+\index{arcade::IGraphics@{arcade::IGraphics}!clearWindow@{clearWindow}}
+\index{clearWindow@{clearWindow}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{clearWindow()}{clearWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::clear\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} \mbox{\hyperlink{structarcade_1_1color__t}{color\+\_\+t}} \&}]{color = {\ttfamily defBackColor} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clears the graphics window with a specific color. 
+
+This function clears the entire window content with the provided color. If no color is specified, it uses the default background color defined in {\ttfamily def\+Back\+Color}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em color} & The color to use for clearing (optional). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_a945cf401d17d7df3015042ce804012cb}\label{classarcade_1_1IGraphics_a945cf401d17d7df3015042ce804012cb} 
+\index{arcade::IGraphics@{arcade::IGraphics}!destroyWindow@{destroyWindow}}
+\index{destroyWindow@{destroyWindow}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{destroyWindow()}{destroyWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::destroy\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Destroys the graphics window. 
+
+This function destroys the initialized graphics window and releases associated resources. \Hypertarget{classarcade_1_1IGraphics_a36d30e3c83fc9f0c9c3e367257cfd942}\label{classarcade_1_1IGraphics_a36d30e3c83fc9f0c9c3e367257cfd942} 
+\index{arcade::IGraphics@{arcade::IGraphics}!displayObjects@{displayObjects}}
+\index{displayObjects@{displayObjects}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{displayObjects()}{displayObjects()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::display\+Objects (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} VPtr\+Object \&}]{objects }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Displays a collection of game objects on the screen. 
+
+This function is responsible for rendering the provided game objects onto the graphics window. The {\ttfamily objects} argument likely points to a container (e.\+g., vector) of {\ttfamily VPtr\+Object} objects representing the game objects to display.
+
+
+\begin{DoxyParams}{Parameters}
+{\em objects} & Container holding pointers to \doxylink{classarcade_1_1IObject}{IObject} objects (game objects to display). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_a0a921fca17257001341acc54c88c2c50}\label{classarcade_1_1IGraphics_a0a921fca17257001341acc54c88c2c50} 
+\index{arcade::IGraphics@{arcade::IGraphics}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} VArcade\+Event \& arcade\+::\+IGraphics\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the accumulated arcade events. 
+
+This function provides access to the events that have occurred since the last call. It returns a reference to a container (likely a vector) of {\ttfamily VArcade\+Event} objects representing the events.
+
+\begin{DoxyReturn}{Returns}
+Reference to a container holding VArcade\+Event objects (events). 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGraphics_a0a9ac7170716c2ea52299242b852d635}\label{classarcade_1_1IGraphics_a0a9ac7170716c2ea52299242b852d635} 
+\index{arcade::IGraphics@{arcade::IGraphics}!getWindowHeight@{getWindowHeight}}
+\index{getWindowHeight@{getWindowHeight}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{getWindowHeight()}{getWindowHeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \& arcade\+::\+IGraphics\+::get\+Window\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the window height. 
+
+This function provides access to the current window height. It returns a reference to an integer variable holding the window\textquotesingle{}s height.
+
+\begin{DoxyReturn}{Returns}
+Reference to an integer holding the window height. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGraphics_a5fff79428cbd96951a281517b6b44a27}\label{classarcade_1_1IGraphics_a5fff79428cbd96951a281517b6b44a27} 
+\index{arcade::IGraphics@{arcade::IGraphics}!getWindowParameters@{getWindowParameters}}
+\index{getWindowParameters@{getWindowParameters}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{getWindowParameters()}{getWindowParameters()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{structarcade_1_1windowParameters__s}{window\+Parameters\+\_\+t}} \& arcade\+::\+IGraphics\+::get\+Window\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the window parameters. 
+
+This function provides access to the current window configuration parameters. It returns a reference to a {\ttfamily \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t}} object containing the window properties.
+
+\begin{DoxyReturn}{Returns}
+Reference to a \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t} object holding window parameters. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGraphics_a7d27e3c106fa556ce9f8c31b2a50dfa5}\label{classarcade_1_1IGraphics_a7d27e3c106fa556ce9f8c31b2a50dfa5} 
+\index{arcade::IGraphics@{arcade::IGraphics}!getWindowTitle@{getWindowTitle}}
+\index{getWindowTitle@{getWindowTitle}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{getWindowTitle()}{getWindowTitle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} std\+::string \& arcade\+::\+IGraphics\+::get\+Window\+Title (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the window title. 
+
+This function provides access to the current window title. It returns a reference to a string object holding the window\textquotesingle{}s title.
+
+\begin{DoxyReturn}{Returns}
+Reference to a string object holding the window title. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGraphics_a2aace04d9f73b6b8839440a4b8099e2f}\label{classarcade_1_1IGraphics_a2aace04d9f73b6b8839440a4b8099e2f} 
+\index{arcade::IGraphics@{arcade::IGraphics}!getWindowWidth@{getWindowWidth}}
+\index{getWindowWidth@{getWindowWidth}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{getWindowWidth()}{getWindowWidth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{int}} \& arcade\+::\+IGraphics\+::get\+Window\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets the window width. 
+
+This function provides access to the current window width. It returns a reference to an integer variable holding the window\textquotesingle{}s width.
+
+\begin{DoxyReturn}{Returns}
+Reference to an integer holding the window width. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGraphics_a56c27670ae2357b4db74e231133775c5}\label{classarcade_1_1IGraphics_a56c27670ae2357b4db74e231133775c5} 
+\index{arcade::IGraphics@{arcade::IGraphics}!initWindow@{initWindow}}
+\index{initWindow@{initWindow}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{initWindow()}{initWindow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::init\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} Ptr\+WindowP}]{windowP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initializes the graphics window. 
+
+This function initializes the graphics window based on the provided parameters. The {\ttfamily windowP} argument likely points to a {\ttfamily \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t}} object containing window configuration details.
+
+
+\begin{DoxyParams}{Parameters}
+{\em windowP} & Shared pointer to a \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t} object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_af38ad7822918284f8a7a0d25ace45f25}\label{classarcade_1_1IGraphics_af38ad7822918284f8a7a0d25ace45f25} 
+\index{arcade::IGraphics@{arcade::IGraphics}!isOpen@{isOpen}}
+\index{isOpen@{isOpen}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{isOpen()}{isOpen()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{bool}} arcade\+::\+IGraphics\+::is\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if the graphics window is open. 
+
+This function returns a boolean indicating whether the graphics window is currently open and active.
+
+\begin{DoxyReturn}{Returns}
+True if the window is open, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{classarcade_1_1IGraphics_ae3c5b4e12864497599d3f9be6a041e3d}\label{classarcade_1_1IGraphics_ae3c5b4e12864497599d3f9be6a041e3d} 
+\index{arcade::IGraphics@{arcade::IGraphics}!loadFonts@{loadFonts}}
+\index{loadFonts@{loadFonts}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{loadFonts()}{loadFonts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::load\+Fonts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} std\+::vector$<$ std\+::string $>$ \&}]{fonts }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Loads fonts for use in text rendering. 
+
+This function allows loading font files for displaying text. The {\ttfamily fonts} argument is likely a vector of strings representing the font file paths to load.
+
+
+\begin{DoxyParams}{Parameters}
+{\em fonts} & Vector of strings containing font file paths. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_ad721cc468ac3bf9fb50f3d79c3147f0e}\label{classarcade_1_1IGraphics_ad721cc468ac3bf9fb50f3d79c3147f0e} 
+\index{arcade::IGraphics@{arcade::IGraphics}!loadTextures@{loadTextures}}
+\index{loadTextures@{loadTextures}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{loadTextures()}{loadTextures()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::load\+Textures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{const}} VPtr\+Texture \&}]{textures }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Loads textures for use in rendering. 
+
+This function allows loading textures from files or other sources. The {\ttfamily textures} argument likely points to a container (e.\+g., vector) of {\ttfamily VPtr\+Texture} objects representing the textures to load.
+
+
+\begin{DoxyParams}{Parameters}
+{\em textures} & Container holding pointers to Texture objects (textures to load). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_a7f47765ada4515017c0f62893d2eee8b}\label{classarcade_1_1IGraphics_a7f47765ada4515017c0f62893d2eee8b} 
+\index{arcade::IGraphics@{arcade::IGraphics}!setWindowHeight@{setWindowHeight}}
+\index{setWindowHeight@{setWindowHeight}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{setWindowHeight()}{setWindowHeight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::set\+Window\+Height (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{int}}}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the window height. 
+
+This function sets the height of the graphics window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & The new height for the window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_aec99055a7f40af6ffa77393f4dc6dafd}\label{classarcade_1_1IGraphics_aec99055a7f40af6ffa77393f4dc6dafd} 
+\index{arcade::IGraphics@{arcade::IGraphics}!setWindowParameters@{setWindowParameters}}
+\index{setWindowParameters@{setWindowParameters}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{setWindowParameters()}{setWindowParameters()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::set\+Window\+Parameters (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structarcade_1_1windowParameters__s}{window\+Parameters\+\_\+t}} \&}]{window\+Parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the window parameters. 
+
+This function allows modifying the window configuration parameters. The {\ttfamily window\+Parameters} argument is likely a reference to a {\ttfamily \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t}} object where the changes are applied.
+
+
+\begin{DoxyParams}{Parameters}
+{\em window\+Parameters} & Reference to a \doxylink{structwindowParameters__t}{window\+Parameters\+\_\+t} object to modify. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_a38a0ba0150fad5f877d2e50bcbddd1ab}\label{classarcade_1_1IGraphics_a38a0ba0150fad5f877d2e50bcbddd1ab} 
+\index{arcade::IGraphics@{arcade::IGraphics}!setWindowTitle@{setWindowTitle}}
+\index{setWindowTitle@{setWindowTitle}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{setWindowTitle()}{setWindowTitle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::set\+Window\+Title (\begin{DoxyParamCaption}\item[{std\+::string \&}]{title }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the window title. 
+
+This function sets the title displayed on the window\textquotesingle{}s title bar.
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The new title string for the window. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classarcade_1_1IGraphics_a5b23586c036b33eb062c1cc520290c3b}\label{classarcade_1_1IGraphics_a5b23586c036b33eb062c1cc520290c3b} 
+\index{arcade::IGraphics@{arcade::IGraphics}!setWindowWidth@{setWindowWidth}}
+\index{setWindowWidth@{setWindowWidth}!arcade::IGraphics@{arcade::IGraphics}}
+\doxysubsubsection{\texorpdfstring{setWindowWidth()}{setWindowWidth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classarcade_1_1Library}{virtual}} \mbox{\hyperlink{classarcade_1_1Library}{void}} arcade\+::\+IGraphics\+::set\+Window\+Width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classarcade_1_1Library}{int}}}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the window width. 
+
+This function sets the width of the graphics window.
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & The new width for the window. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+inc/IGraphics.\+hpp\end{DoxyCompactItemize}
